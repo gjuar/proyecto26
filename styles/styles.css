@@ -1,0 +1,77 @@
+/* Paleta de colores:
+Principal- Violeta oscuro: #493657
+Secundario - Coral:         #E76F51
+Acento - Naranja suave:     #F4A261
+Fondo - Crema:              #f3e2cf
+Texto - Gris oscuro:        #302D33
+*/
+
+/* Fonts family:
+Zen Dots: font-family: "Zen Dots", sans-serif;
+Dongle: font-family: "Dongle", sans-serif;
+*/
+
+
+/* Estilos generales */
+body {
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    background-color: #f3e2cf;
+    color: #302D33;
+}
+
+p, ul {
+    font-size: 1.5rem;
+}
+
+a {
+    color: #E76F51;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    font-family: "Zen Dots", sans-serif;
+    background: linear-gradient(135deg,#493657,#E76F51,#F4A261);
+    color: #FFF8F0; 
+}
+
+.nav-title {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+/* Títulos */
+h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #493657;
+}
+
+h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #493657;
+}
+
+h3 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #493657;
+}
+
+/* Figcaption */
+figcaption {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #E76F51;
+}
+
+/* Footer*/
+footer {
+    background-color: #493657;
+    color: #f3e2cf;
+}
