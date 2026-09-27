@@ -78,29 +78,12 @@ figcaption {
 }
 
 /* header */
-header {
+.header {
     grid-area: header;
     font-family: "Zen Dots", sans-serif;
     background: linear-gradient(135deg, #493657, #E76F51, #F4A261);
     color: #FFF8F0;
     padding: 1rem;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.5rem;
-    padding: 1rem;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li a {
-    color: #493657;
 }
 
 .nav-title {
@@ -110,6 +93,63 @@ nav ul li a {
     font-weight: 400;
     border-radius: 2.5rem;
     padding: 1rem;
+}
+
+.nav-title:hover {
+    background-color: #E76F51;
+    color: #493657;
+    font-size: 3rem;
+    font-weight: 400;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    transition: 1s;
+}
+
+.navbar .nav-link {
+    color: #493657;
+}
+
+.navbar .nav-link:active {
+    color: #E76F51;
+}
+
+.navbar .nav-link.active {
+    color: #f3e2cf;
+}
+
+.navbar .nav-link:hover {
+    color: #f3e2cf;
+    transition: 0.5s;
+}
+
+.navbar .nav-link.show {
+    color: #493657;
+}
+
+.navbar .dropdown-menu {
+    background-color: #493657;
+}
+
+.navbar .dropdown-item {
+    color: #F3E2CF;
+}
+
+.navbar .nav-link:focus {
+    color: #FFF8F0;
+    outline: 2px solid #E76F51;
+    outline-offset: 2px;
+    border-radius: 1rem;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #E76F51;
+    color: #FFF8F0;
+    transition: 0.5s;
+}
+
+.navbar .dropdown-item:active {
+    background-color: #FFF8F0;
+    color: #E76F51;
 }
 
 
@@ -133,6 +173,17 @@ section {
     border-radius: 2rem;
 }
 
+.trip-carousel {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.trip-carousel img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
 .servicios {
     display: flex;
     flex-direction: column;
@@ -147,11 +198,27 @@ section {
     border: 2px solid #493657;
 }
 
+.proximamente-w {
+    display: inline-block;
+}
+
+.proximamente {
+    width: 100%;
+}
+
+.proximamente:disabled {
+    background-color: #493657;
+    color: #e8e4eb;
+    font-size: 1.5rem;
+}
+
 .herramientas ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     list-style-type: none;
+    padding: 0;
 }
 
 .herramientas figure {
@@ -179,15 +246,15 @@ section {
     gap: 2rem;
 }
 
-.roma {
+#roma {
     grid-area: roma;
 }
 
-.paris {
+#paris {
     grid-area: paris;
 }
 
-.amsterdam {
+#amsterdam {
     grid-area: amsterdam;
 }
 
@@ -206,11 +273,32 @@ footer {
 
 footer ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
+    padding: 0;
 }
 
 footer ul li {
     list-style-type: none;
+}
+
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #f3e2cf;
+}
+
+footer a:focus {
+    outline: 2px solid #E76F51;
+    outline-offset: 3px;
+    border-radius: 0.5rem;
+}
+
+footer a:active {
+    color: #F4A261;
 }
 
 @media (min-width: 768px) {
@@ -218,10 +306,12 @@ footer ul li {
     /* generales */
     h1 {
         font-size: 3rem;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     }
 
     h2 {
         font-size: 2.5rem;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     }
 
     h3 {
@@ -233,10 +323,6 @@ footer ul li {
     }
 
     /* header */
-    header nav {
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
     .nav-title {
         font-size: 4rem;
@@ -323,15 +409,6 @@ footer ul li {
         font-size: 3rem;
     }
 
-    header ul {
-        display: flex;
-        gap: 3rem
-    }
-
-    header ul li a:hover {
-        color: #f3e2cf;
-    }
-
     /* main */
     .servicios {
         grid-template-columns: repeat(3, 1fr);
@@ -380,5 +457,4 @@ footer ul li {
     footer ul li {
         font-size: 1.6rem;
     }
-
 }

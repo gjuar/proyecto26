@@ -4,29 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- css -->
     <link rel="stylesheet" href="../styles/styles.css">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Zen+Dots&display=swap"
         rel="stylesheet">
-    <title>Tripdate · Destinos</title>
+    <!-- title -->
+    <title>Tripdate · Inicio</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <!-- Título -->
-            <a class="nav-title" href="../index.html" title="Tripdate, una cita con el mundo">Tripdate</a>
-
-            <!-- Menú -->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./destinos.html">Destinos</a></li>
-                <li><a href="./guias.html">Guías</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary header">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-title" href="../index.html">Tripdate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" aria-current="page" href="./destinos.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Destinos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./destinos.html">Ver todos</a></li>
+                                <li><a class="dropdown-item" href="./destinos.html#roma">Roma</a></li>
+                                <li><a class="dropdown-item" href="./destinos.html#paris">París</a></li>
+                                <li><a class="dropdown-item" href="./destinos.html#amsterdam">Ámsterdam</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./guias.html">Guías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
     </header>
 
     <main>
@@ -43,19 +74,19 @@
 
             <!-- Artículos -->
             <div class="destinos">
-                <article class="roma">
+                <article id="roma">
                     <h3>Roma</h3>
                     <img class="img-destinos" src="../img/roma.webp" alt="Mapa de Roma">
                     <p>Historia, gastronomía y algunos de los monumentos más reconocidos de Europa.</p>
                 </article>
 
-                <article class="paris">
+                <article id="paris">
                     <h3>París</h3>
                     <img class="img-destinos" src="../img/paris.webp" alt="Mapa de París">
                     <p>Descubre sus barrios, monumentos, gastronomía y lugares imprescindibles.</p>
                 </article>
 
-                <article class="amsterdam">
+                <article id="amsterdam">
                     <h3>Ámsterdam</h3>
                     <img class="img-destinos" src="../img/amsterdam.webp" alt="Mapa de Ámsterdam">
                     <p>Canales, arquitectura y una ciudad perfecta para recorrer durante una escapada.</p>
@@ -77,6 +108,11 @@
         </ul>
 
     </footer>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

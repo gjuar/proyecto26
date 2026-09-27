@@ -4,33 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- css -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Zen+Dots&display=swap"
         rel="stylesheet">
+    <!-- title -->
     <title>Tripdate · Inicio</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <!-- Título -->
-            <a class="nav-title" href="./index.html" title="Tripdate, una cita con el mundo">Tripdate</a>
-
-            <!-- Menú -->
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="pages/destinos.html">Destinos</a></li>
-                <li><a href="pages/guias.html">Guías</a></li>
-                <li><a href="pages/nosotros.html">Nosotros</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary header">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-title" href="./index.html">Tripdate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./pages/destinos.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Destinos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/destinos.html">Ver todos</a></li>
+                                <li><a class="dropdown-item" href="./pages/destinos.html#roma">Roma</a></li>
+                                <li><a class="dropdown-item" href="./pages/destinos.html#paris">París</a></li>
+                                <li><a class="dropdown-item" href="./pages/destinos.html#amsterdam">Ámsterdam</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/guias.html">Guías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <!-- Presentación -->
+        <!-- presentación -->
         <div>
             <h1>Tu próxima cita es con el mundo</h1>
 
@@ -38,22 +69,44 @@
                 recomendaciones para vivir experiencias inolvidables alrededor del mundo.</p>
         </div>
 
-        <!-- Info general -->
+        <!-- info general -->
         <section>
             <div class="general">
                 <h2>Descubre Tripdate</h2>
 
-                <p>En Tripdate compartimos destinos, consejos e itinerarios para ayudarte a organizar tu
-                    próxima aventura de una manera sencilla.</p>
+                <p>En Tripdate compartimos destinos, consejos e itinerarios para ayudarte a organizar tu próxima
+                    aventura de una manera sencilla.</p>
 
-                <figure>
-                    <img class="img-general" src="img/viajeros-observando.webp" alt="Viajeros observando un paisaje durante un viaje">
+                <!-- carousel -->
+                <div id="carouselExampleAutoplaying" class="carousel slide trip-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/carousel-1.webp" class="d-block w-100"
+                                alt="Hombre visualizando un avión despegar">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/carousel-2.webp" class="d-block w-100" alt="Avión volando en un atardecer">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/carousel-3.webp" class="d-block w-100" alt="Mujer disfrutando de su viaje">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                     <figcaption>Descubre nuevos lugares y empieza a planificar tu próxima aventura.
                     </figcaption>
-                </figure>
+                </div>
             </div>
 
-            <!-- Sección de servicios -->
+            <!-- sección de servicios -->
 
             <h2>¿Qué encontrarás en Tripdate?</h2>
             <div class="servicios">
@@ -61,11 +114,19 @@
                 <article class="destinos">
                     <h3>Destinos</h3>
                     <p>Conoce lugares increíbles y encuentra información para elegir tu próximo destino.</p>
+                    <span class="d-inline-block proximamente-w" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Esta sección estará disponible próximamente.">
+                    <button type="button" class="btn proximamente" disabled>Próximamente!</button>
+                    </span>
                 </article>
+
+                
 
                 <article class="guias">
                     <h3>Guías de viaje</h3>
                     <p>Encuentra recomendaciones, itinerarios y consejos prácticos para organizar tus viajes.</p>
+                    <span class="d-inline-block proximamente-w" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Esta sección estará disponible próximamente.">
+                    <button type="button" class="btn proximamente" disabled>Próximamente!</button>
+                    </span>
                 </article>
 
                 <article class="consejos">
@@ -74,7 +135,7 @@
                 </article>
             </div>
 
-            <!-- Lista de herramientas-beneficios -->
+            <!-- lista de herramientas-beneficios -->
             <h2>¿Por qué elegir Tripdate?</h2>
 
             <div class="herramientas">
@@ -114,10 +175,10 @@
     </main>
 
     <footer>
-        <!-- Copyright -->
+        <!-- copyright -->
         <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
 
-        <!-- Lista de redes sociales -->
+        <!-- lista de redes sociales -->
         <ul>
             <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
             <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
@@ -125,6 +186,21 @@
         </ul>
 
     </footer>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+        [...popoverTriggerList].forEach(popoverTriggerEl => {
+            new bootstrap.Popover(popoverTriggerEl, {
+                placement: 'bottom',
+                offset: [0, 5]
+            });
+        });
+</script>
 </body>
 
 </html>
