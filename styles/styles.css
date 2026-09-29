@@ -1,0 +1,460 @@
+/* Paleta de colores:
+Principal- Violeta oscuro: #493657
+Secundario - Coral:         #E76F51
+Acento - Naranja suave:     #F4A261
+Fondo - Crema:              #f3e2cf
+Texto - Gris oscuro:        #302D33
+*/
+
+/* Fonts family:
+Zen Dots: font-family: "Zen Dots", sans-serif;
+Dongle: font-family: "Dongle", sans-serif;
+*/
+
+/* estilos generales */
+/* mobile-first */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    font-family: "Dongle", sans-serif;
+    background-color: #f3e2cf;
+    color: #302D33;
+    min-height: 100vh;
+}
+
+p,
+ul {
+    font-size: 1.7rem;
+}
+
+a {
+    color: #E76F51;
+    text-decoration: none;
+}
+
+
+/* titulos */
+h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #493657;
+}
+
+h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #493657;
+}
+
+h3 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #493657;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #E76F51;
+}
+
+/* header */
+.header {
+    grid-area: header;
+    font-family: "Zen Dots", sans-serif;
+    background: linear-gradient(135deg, #493657, #E76F51, #F4A261);
+    color: #FFF8F0;
+    padding: 1rem;
+}
+
+.nav-title {
+    background-color: #493657;
+    color: #E76F51;
+    font-size: 3rem;
+    font-weight: 400;
+    border-radius: 2.5rem;
+    padding: 1rem;
+}
+
+.nav-title:hover {
+    background-color: #E76F51;
+    color: #493657;
+    font-size: 3rem;
+    font-weight: 400;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    transition: 1s;
+}
+
+.navbar .nav-link {
+    color: #493657;
+}
+
+.navbar .nav-link:active {
+    color: #E76F51;
+}
+
+.navbar .nav-link.active {
+    color: #f3e2cf;
+}
+
+.navbar .nav-link:hover {
+    color: #f3e2cf;
+    transition: 0.5s;
+}
+
+.navbar .nav-link.show {
+    color: #493657;
+}
+
+.navbar .dropdown-menu {
+    background-color: #493657;
+}
+
+.navbar .dropdown-item {
+    color: #F3E2CF;
+}
+
+.navbar .nav-link:focus {
+    color: #FFF8F0;
+    outline: 2px solid #E76F51;
+    outline-offset: 2px;
+    border-radius: 1rem;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #E76F51;
+    color: #FFF8F0;
+    transition: 0.5s;
+}
+
+.navbar .dropdown-item:active {
+    background-color: #FFF8F0;
+    color: #E76F51;
+}
+
+
+/* main */
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    gap: 2rem;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.img-general {
+    border-radius: 2rem;
+}
+
+.trip-carousel {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.trip-carousel img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.servicios article {
+    background: linear-gradient(135deg, #F3E2CF, #F8DDBF);
+    padding: 1.7rem;
+    border-radius: 20px;
+    border: 2px solid #493657;
+}
+
+.proximamente-w {
+    display: inline-block;
+}
+
+.proximamente {
+    width: 100%;
+}
+
+.proximamente:disabled {
+    background-color: #493657;
+    color: #e8e4eb;
+    font-size: 1.5rem;
+}
+
+.herramientas ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.herramientas figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.por-que {
+    border-radius: 3rem;
+}
+
+.img-destinos {
+    border-radius: 15%;
+}
+
+.destinos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "roma"
+        "paris"
+        "amsterdam";
+    gap: 2rem;
+}
+
+#roma {
+    grid-area: roma;
+}
+
+#paris {
+    grid-area: paris;
+}
+
+#amsterdam {
+    grid-area: amsterdam;
+}
+
+/* footer*/
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #493657;
+    color: #f3e2cf;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 0.5rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #f3e2cf;
+}
+
+footer a:focus {
+    outline: 2px solid #E76F51;
+    outline-offset: 3px;
+    border-radius: 0.5rem;
+}
+
+footer a:active {
+    color: #F4A261;
+}
+
+@media (min-width: 768px) {
+
+    /* generales */
+    h1 {
+        font-size: 3rem;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 2.1rem;
+    }
+
+    /* header */
+
+    .nav-title {
+        font-size: 4rem;
+    }
+
+    /* main */
+    main {
+        margin: 2rem;
+        padding: 1rem;
+    }
+
+    figcaption {
+        font-size: 2.5rem;
+    }
+
+    .destinos {
+        grid-area: destinos;
+    }
+
+    .guias {
+        grid-area: guias;
+    }
+
+    .consejos {
+        grid-area: consejos;
+    }
+
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "destinos guias"
+            "consejos consejos";
+        line-height: 2rem;
+    }
+
+    .servicios article {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .img-1 {
+        grid-area: img-1;
+    }
+
+    .img-2 {
+        grid-area: img-2;
+    }
+
+    .img-3 {
+        grid-area: img-3;
+    }
+
+    .img-4 {
+        grid-area: img-4;
+    }
+
+    .herramientas ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "img-1 img-2"
+            "img-3 img-4";
+    }
+
+    /* footer */
+    footer ul li {
+        font-size: 3rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    /* generales */
+    p,
+    ul {
+        font-size: 1.5rem;
+    }
+
+    /* header */
+    .nav-title {
+        font-size: 3rem;
+    }
+
+    /* main */
+    .servicios {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "destinos guias consejos";
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .servicios article {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .servicios article h3 {
+        min-height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    figcaption {
+        font-size: 1.6rem;
+    }
+
+    .herramientas {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .destinos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "roma paris amsterdam";
+    }
+
+    .img-destinos {
+        width: 100%;
+        height: 300px;
+        border-radius: 15%;
+    }
+
+    /* footer */
+    footer ul li {
+        font-size: 1.6rem;
+    }
+}
