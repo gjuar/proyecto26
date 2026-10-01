@@ -81,28 +81,63 @@ figcaption {
 .header {
     grid-area: header;
     font-family: "Zen Dots", sans-serif;
-    background: linear-gradient(135deg, #493657, #E76F51, #F4A261);
+    background-color: #f3e2cf;
     color: #FFF8F0;
     padding: 1rem;
 }
 
 .nav-title {
-    background-color: #493657;
-    color: #E76F51;
-    font-size: 3rem;
-    font-weight: 400;
-    border-radius: 2.5rem;
-    padding: 1rem;
+    width: 65%;
+    filter: brightness(0) saturate(100%)
+            invert(19%)
+            sepia(47%)
+            saturate(850%)
+            hue-rotate(-128.7deg)
+            brightness(63%)
+            contrast(72%);
 }
 
-.nav-title:hover {
-    background-color: #E76F51;
-    color: #493657;
-    font-size: 3rem;
-    font-weight: 400;
-    border-radius: 2.5rem;
-    padding: 1rem;
-    transition: 1s;
+/* botom hamburguesa - mobile y tablet */
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    transition: 0.3s;
+}
+
+.navbar-toggler:hover {
+    transform: scale(1.08);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: 2px solid #E76F51;
+    outline-offset: 3px;
+}
+
+.navbar-toggler:active {
+    transform: scale(0.95);
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    width: 32px;
+    height: 24px;
+    position: relative;
+    border-top: 4px solid #493657;
+    border-bottom: 4px solid #493657;
+    border-radius: 3px;
+}
+
+/* Línea central */
+.navbar-toggler-icon::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    border-top: 4px solid #493657;
+    border-radius: 3px;
+    transform: translateY(-50%);
 }
 
 .navbar .nav-link {
@@ -114,7 +149,7 @@ figcaption {
 }
 
 .navbar .nav-link.active {
-    color: #f3e2cf;
+    color: #493657;
 }
 
 .navbar .nav-link:hover {
@@ -161,6 +196,12 @@ main {
     margin: 2rem;
     gap: 2rem;
     text-align: center;
+}
+
+.hero {
+    position: relative;
+    min-height: 600px;
+    overflow: hidden;
 }
 
 section {
@@ -405,10 +446,90 @@ footer a:active {
     }
 
     /* header */
+    header {
+    grid-area: header;
+    font-family: "Zen Dots", sans-serif;
+    background-color: #F3E2CF;
+    color: #493657;
+}
+
+.header {
+    padding: 0.7rem 5rem;
+}
+    
     .nav-title {
-        font-size: 3rem;
+        width: 15%;
     }
 
+    .navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    }
+
+    .navbar .nav-link {
+    color: #302D33;
+    font-family: "Dongle", sans-serif;
+    font-size: 1.5rem;
+
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.navbar .nav-link.active::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #E76F51;
+}
+
+.navbar .nav-link:hover {
+    color: #E76F51;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:focus {
+    color: #E76F51;
+    outline: 2px solid #E76F51;
+    outline-offset: 4px;
+    border-radius: 0.3rem;
+}
+
+.nav-button {
+    background-color: #E76F51;
+    color: #FFF8F0;
+
+    padding: 0.7rem 1.4rem;
+    border-radius: 2rem;
+
+    font-family: "Dongle", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #493657;
+    color: #FFF8F0;
+    transform: translateY(-2px);
+}
+
+        
     /* main */
     .servicios {
         grid-template-columns: repeat(3, 1fr);
@@ -417,6 +538,8 @@ footer a:active {
         width: 80%;
         margin: 0 auto;
     }
+    
+        
 
     .servicios article {
         display: flex;

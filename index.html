@@ -14,20 +14,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Zen+Dots&display=swap"
         rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon.png">
     <!-- title -->
     <title>Tripdate · Inicio</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary header">
+        <nav class="navbar navbar-expand-lg header">
             <div class="container-fluid">
-                <a class="navbar-brand nav-title" href="./index.html">Tripdate</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <!-- logo -->
+                <img class="nav-title" src="./img/tripdate-logo.webp" alt="Tripdate. Tu proxima cita es con el mundo.">
+                <!-- hamburguesa -->
+                <button class="navbar-toggler nav-hamburger" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- navbar -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
@@ -56,55 +61,42 @@
                         </li>
                     </ul>
                 </div>
+                <div>
+                <a class="nav-button" href="./contacto.html">Planificá tu viaje →</a>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- presentación -->
-        <div>
-            <h1>Tu próxima cita es con el mundo</h1>
+                <!-- info general -->
+        <section class="hero">
 
-            <p>Descubre nuevos destinos, encuentra inspiración para tus próximos viajes y conoce nuestras
-                recomendaciones para vivir experiencias inolvidables alrededor del mundo.</p>
+        <img 
+            class="hero-image"
+            src="./img/hero.webp"
+            alt="Vista de Roma al atardecer"
+        >
+
+        <div class="hero-overlay">
+            <p class="hero-eyebrow">EXPLORÁ · DESCUBRÍ · VIVÍ</p>
+
+            <h1>
+                Tu próxima cita
+                <span>es con el mundo</span>
+            </h1>
+
+            <p class="hero-text">
+                Inspiración, guías y destinos increíbles para que
+                cada viaje se convierta en una gran historia.
+            </p>
+
+            <a class="hero-button" href="./pages/destinos.html">
+                Descubrí destinos →
+            </a>
         </div>
 
-        <!-- info general -->
-        <section>
-            <div class="general">
-                <h2>Descubre Tripdate</h2>
-
-                <p>En Tripdate compartimos destinos, consejos e itinerarios para ayudarte a organizar tu próxima
-                    aventura de una manera sencilla.</p>
-
-                <!-- carousel -->
-                <div id="carouselExampleAutoplaying" class="carousel slide trip-carousel" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./img/carousel-1.webp" class="d-block w-100"
-                                alt="Hombre visualizando un avión despegar">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carousel-2.webp" class="d-block w-100" alt="Avión volando en un atardecer">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carousel-3.webp" class="d-block w-100" alt="Mujer disfrutando de su viaje">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                    <figcaption>Descubre nuevos lugares y empieza a planificar tu próxima aventura.
-                    </figcaption>
-                </div>
-            </div>
+    </section>
 
             <!-- sección de servicios -->
 
