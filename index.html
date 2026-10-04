@@ -22,22 +22,24 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg header">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <!-- logo -->
                 <img class="nav-title" src="./img/tripdate-logo.webp" alt="Tripdate. Tu proxima cita es con el mundo.">
                 <!-- hamburguesa -->
-                <button class="navbar-toggler nav-hamburger" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- navbar -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <!-- menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
+                        <!-- dropdown -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="./pages/destinos.html" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -61,107 +63,94 @@
                         </li>
                     </ul>
                 </div>
+                <!-- boton -->
                 <div>
-                <a class="nav-button" href="./contacto.html">Planificá tu viaje →</a>
+                    <a class="nav-button" href="./contacto.html">Planificá tu viaje →</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-                <!-- info general -->
         <section class="hero">
+            <div class="hero-content">
+                <p class="hero-eyebrow">EXPLORÁ · DESCUBRÍ · VIVÍ</p>
+                <h1>Tu próxima cita
+                    <span>es con el mundo</span>
+                </h1>
 
-        <img 
-            class="hero-image"
-            src="./img/hero.webp"
-            alt="Vista de Roma al atardecer"
-        >
+                <p class="hero-text">Inspiración, guías y destinos increíbles para que cada viaje se convierta en una gran historia.</p>
 
-        <div class="hero-overlay">
-            <p class="hero-eyebrow">EXPLORÁ · DESCUBRÍ · VIVÍ</p>
+                <a class="hero-button" href="./pages/destinos.html">Descubrí destinos →</a>
+            </div>
+        </section>
 
-            <h1>
-                Tu próxima cita
-                <span>es con el mundo</span>
-            </h1>
+        <!-- sección de servicios -->
 
-            <p class="hero-text">
-                Inspiración, guías y destinos increíbles para que
-                cada viaje se convierta en una gran historia.
-            </p>
+        <h2>¿Qué encontrarás en Tripdate?</h2>
+        <div class="servicios">
 
-            <a class="hero-button" href="./pages/destinos.html">
-                Descubrí destinos →
-            </a>
+            <article class="destinos">
+                <h3>Destinos</h3>
+                <p>Conoce lugares increíbles y encuentra información para elegir tu próximo destino.</p>
+                <span class="d-inline-block proximamente-w" tabindex="0" data-bs-toggle="popover"
+                    data-bs-trigger="hover focus" data-bs-content="Esta sección estará disponible próximamente.">
+                    <button type="button" class="btn proximamente" disabled>Próximamente!</button>
+                </span>
+            </article>
+
+
+
+            <article class="guias">
+                <h3>Guías de viaje</h3>
+                <p>Encuentra recomendaciones, itinerarios y consejos prácticos para organizar tus viajes.</p>
+                <span class="d-inline-block proximamente-w" tabindex="0" data-bs-toggle="popover"
+                    data-bs-trigger="hover focus" data-bs-content="Esta sección estará disponible próximamente.">
+                    <button type="button" class="btn proximamente" disabled>Próximamente!</button>
+                </span>
+            </article>
+
+            <article class="consejos">
+                <h3>Consejos para viajeros</h3>
+                <p>Descubre herramientas y recomendaciones que pueden ayudarte antes y durante cada viaje.</p>
+            </article>
+        </div> -->
+
+        <!-- lista de herramientas-beneficios -->
+        <!-- <h2>¿Por qué elegir Tripdate?</h2>
+
+        <div class="herramientas">
+            <ul>
+                <li class="img-1">
+                    <figure><img class="por-que" src="img/ideas-destinos.webp"
+                            alt="Mapa, monumentos, diferentes clima, ideas para tus nuevos destinos.">
+                        <figcaption>Ideas para descubrir nuevos destinos.</figcaption>
+                    </figure>
+
+                </li>
+                <li class="img-2">
+                    <figure><img class="por-que" src="img/guias-viajes.webp"
+                            alt="Libreta con anotaciones, pasaporte, y el paso a paso de tu viaje.">
+                        <figcaption>Guías sencillas para organizar tus viajes.</figcaption>
+                    </figure>
+
+                </li>
+                <li class="img-3">
+                    <figure><img class="por-que" src="img/consejos-experiencias.webp"
+                            alt="Viajera observando el paisaje junto con una reseña de 5 estrellas.">
+                        <figcaption>Consejos basados en experiencias viajeras.</figcaption>
+                    </figure>
+
+                </li>
+                <li class="img-4">
+                    <figure><img class="por-que" src="img/recomendaciones-actividades.webp"
+                            alt="Cámara de fotos con diferentes fotografías de lugares y actividades.">
+                        <figcaption>Recomendaciones de lugares y actividades.</figcaption>
+                    </figure>
+
+                </li>
+            </ul>
         </div>
-
-    </section>
-
-            <!-- sección de servicios -->
-
-            <h2>¿Qué encontrarás en Tripdate?</h2>
-            <div class="servicios">
-
-                <article class="destinos">
-                    <h3>Destinos</h3>
-                    <p>Conoce lugares increíbles y encuentra información para elegir tu próximo destino.</p>
-                    <span class="d-inline-block proximamente-w" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Esta sección estará disponible próximamente.">
-                    <button type="button" class="btn proximamente" disabled>Próximamente!</button>
-                    </span>
-                </article>
-
-                
-
-                <article class="guias">
-                    <h3>Guías de viaje</h3>
-                    <p>Encuentra recomendaciones, itinerarios y consejos prácticos para organizar tus viajes.</p>
-                    <span class="d-inline-block proximamente-w" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Esta sección estará disponible próximamente.">
-                    <button type="button" class="btn proximamente" disabled>Próximamente!</button>
-                    </span>
-                </article>
-
-                <article class="consejos">
-                    <h3>Consejos para viajeros</h3>
-                    <p>Descubre herramientas y recomendaciones que pueden ayudarte antes y durante cada viaje.</p>
-                </article>
-            </div>
-
-            <!-- lista de herramientas-beneficios -->
-            <h2>¿Por qué elegir Tripdate?</h2>
-
-            <div class="herramientas">
-                <ul>
-                    <li class="img-1">
-                        <figure><img class="por-que" src="img/ideas-destinos.webp"
-                                alt="Mapa, monumentos, diferentes clima, ideas para tus nuevos destinos.">
-                            <figcaption>Ideas para descubrir nuevos destinos.</figcaption>
-                        </figure>
-
-                    </li>
-                    <li class="img-2">
-                        <figure><img class="por-que" src="img/guias-viajes.webp"
-                                alt="Libreta con anotaciones, pasaporte, y el paso a paso de tu viaje.">
-                            <figcaption>Guías sencillas para organizar tus viajes.</figcaption>
-                        </figure>
-
-                    </li>
-                    <li class="img-3">
-                        <figure><img class="por-que" src="img/consejos-experiencias.webp"
-                                alt="Viajera observando el paisaje junto con una reseña de 5 estrellas.">
-                            <figcaption>Consejos basados en experiencias viajeras.</figcaption>
-                        </figure>
-
-                    </li>
-                    <li class="img-4">
-                        <figure><img class="por-que" src="img/recomendaciones-actividades.webp"
-                                alt="Cámara de fotos con diferentes fotografías de lugares y actividades.">
-                            <figcaption>Recomendaciones de lugares y actividades.</figcaption>
-                        </figure>
-
-                    </li>
-                </ul>
-            </div>
         </section>
 
     </main>
@@ -171,11 +160,11 @@
         <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
 
         <!-- lista de redes sociales -->
-        <ul>
+        <!-- <ul>
             <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
             <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
             <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        </ul>
+        </ul> -->
 
     </footer>
 
@@ -184,7 +173,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script>
-    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
 
         [...popoverTriggerList].forEach(popoverTriggerEl => {
             new bootstrap.Popover(popoverTriggerEl, {
@@ -192,7 +181,7 @@
                 offset: [0, 5]
             });
         });
-</script>
+    </script>
 </body>
 
 </html>
