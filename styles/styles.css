@@ -164,10 +164,9 @@ header:has(.navbar-collapse.show)+main .hero {
 /* main */
 main {
     grid-area: main;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    gap: 2rem;
-    text-align: center; */
+    gap: 1rem;
 }
 
 /* hero */
@@ -245,11 +244,133 @@ main {
     width: fit-content;
 }
 
+.destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.destacados h2 {
+    font-size: 1.6rem;
+    width: 60%;
+}
+
+.destacados h2 span {
+    display: block;
+    color: #E76F51;
+    font-style: italic;
+}
+
+.destacados-eyebrow {
+    color: #bd5b42;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.destacados-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 90%;
+}
+
+.card-roma {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url(../img/card-roma.webp);
+    height: 30dvh;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 9px #000000;
+}
+
+.card-paris {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url(../img/card-paris.webp);
+    height: 30dvh;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 9px #000000;
+}
+
+.card-amsterdam {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url(../img/card-amsterdam.webp);
+    height: 30dvh;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 9px #000000;
+}
+
+.card-back {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffffbe;
+    width: 90%;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.card-back a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #493657;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding-top: 0.2rem;
+    box-shadow: 1px 1px 10px #000000;
+}
+
+.card-back img {
+    width: 40px;
+    object-fit: cover;
+}
+
+.card-text {
+    text-align: left;
+}
+
+.card-text h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.card-text p {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
 section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
+
+
 
 .img-general {
     border-radius: 2rem;
