@@ -72,159 +72,133 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <p class="hero-eyebrow">EXPLORÁ · DESCUBRÍ · VIVÍ</p>
-                <h1>Tu próxima cita
-                    <span>es con el mundo</span>
-                </h1>
+        <section>
+            <div class="hero">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">EXPLORÁ · DESCUBRÍ · VIVÍ</p>
+                    <h1>Tu próxima cita
+                        <span>es con el mundo</span>
+                    </h1>
+                    <p class="hero-text">Inspiración, guías y destinos increíbles para que cada viaje se convierta en
+                        una gran historia.</p>
+                    <a class="hero-button" href="./pages/destinos.html">Descubrí destinos →</a>
+                </div>
+            </div>
 
-                <p class="hero-text">Inspiración, guías y destinos increíbles para que cada viaje se convierta en una gran historia.</p>
+            <!-- destinos -->
+            <div class="destacados">
+                <p class="destacados-eyebrow">DESTINOS DESTACADOS</p>
+                <h2>Lugares que <span>te esperan</span></h2>
+                <div class="destacados-cards">
 
-                <a class="hero-button" href="./pages/destinos.html">Descubrí destinos →</a>
+                    <!-- card roma -->
+                    <div class="card-roma">
+                        <div class="card-back">
+                            <img class="card-ubi" src="./img/icono-ubicacion.webp" alt="Icono de ubicacion">
+                            <div class="card-text">
+                                <h3>Roma</h3>
+                                <p>Historia en cada rincón</p>
+                            </div>
+                            <a href="">→</a>
+                        </div>
+                    </div>
+
+                    <!-- card paris -->
+                    <div class="card-paris">
+                        <div class="card-back">
+                            <img class="card-ubi" src="./img/icono-ubicacion.webp" alt="Icono de ubicacion">
+                            <div class="card-text">
+                                <h3>París</h3>
+                                <p>Arte, cultura y romante</p>
+                            </div>
+                            <a href="">→</a>
+                        </div>
+                    </div>
+
+                    <!-- card amsterdam -->
+                    <div class="card-amsterdam">
+                        <div class="card-back">
+                            <img class="card-ubi" src="./img/icono-ubicacion.webp" alt="Icono de ubicacion">
+                            <div class="card-text">
+                                <h3>Ámsterdam</h3>
+                                <p>Canales, bicicletas y</p>
+                            </div>
+                            <a href="">→</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- servicios -->
+            <div class="servicios">
+                <h2>¿Qué ofrecemos?</h2>
+                <div class="servicios-list">
+
+                    <!-- guias de viaje -->
+                    <div class="servicios-item">
+                        <img src="./img/icon-guias.webp" alt="">
+                        <div class="servicios-item-text">
+                            <h3>Guías de viaje</h3>
+                            <p>Consejos, rutas y experiencias reales para cada destino.</p>
+                        </div>
+                    </div>
+
+                    <!-- planifica tu viaje -->
+                    <div class="servicios-item">
+                        <img src="./img/icon-planifica.webp" alt="">
+                        <div class="servicios-item-text">
+                            <h3>Planificá tu viaje</h3>
+                            <p>Te ayudamos a organizar cada detalle de tu aventura.</p>
+                        </div>
+                    </div>
+
+                    <!-- experiencias unicas -->
+                    <div class="servicios-item">
+                        <img src="./img/icon-experiencias.webp" alt="">
+                        <div class="servicios-item-text">
+                            <h3>Experiencias únicas</h3>
+                            <p>Actividades, tours y lugares imperdibles.</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
-
-        <!-- destinos -->
-        <div class="destacados">
-            <p class="destacados-eyebrow">DESTINOS DESTACADOS</p>
-            <h2>Lugares que <span>te esperan</span></h2>
-            <div class="destacados-cards">
-
-                <div class="card-roma">
-                    <div class="card-back">
-                        <img class="card-ubi" src="./img/icono-ubicacion.webp" alt="Icono de ubicacion">
-                        <div class="card-text">
-                            <h3>Roma</h3>
-                            <p>Historia en cada rincón</p>
-                        </div>
-                        <a href="">→</a>
-                    </div>
-                </div>
-
-                <div class="card-paris">
-                    <div class="card-back">
-                        <img class="card-ubi" src="./img/icono-ubicacion.webp" alt="Icono de ubicacion">
-                        <div class="card-text">
-                            <h3>París</h3>
-                            <p>Arte, cultura y romante</p>
-                        </div>
-                        <a href="">→</a>
-                    </div>
-                </div>
-
-                <div class="card-amsterdam">
-                    <div class="card-back">
-                        <img class="card-ubi" src="./img/icono-ubicacion.webp" alt="Icono de ubicacion">
-                        <div class="card-text">
-                            <h3>Ámsterdam</h3>
-                            <p>Canales, bicicletas y</p>
-                        </div>
-                        <a href="">→</a>
-                    </div>
-                </div>
-
-
-                <!-- <div><img class="destacados-cards-img" src="./img/card-paris.webp" alt="Paris"></div>
-                <div><img class="destacados-cards-img" src="./img/card-amsterdam.webp" alt="amsterdam"></div> -->
-            </div>
-        </div>
-
-        <!-- <h2>¿Qué encontrarás en Tripdate?</h2>
-        <div class="servicios">
-
-            <article class="destinos">
-                <h3>Destinos</h3>
-                <p>Conoce lugares increíbles y encuentra información para elegir tu próximo destino.</p>
-                <span class="d-inline-block proximamente-w" tabindex="0" data-bs-toggle="popover"
-                    data-bs-trigger="hover focus" data-bs-content="Esta sección estará disponible próximamente.">
-                    <button type="button" class="btn proximamente" disabled>Próximamente!</button>
-                </span>
-            </article>
-
-
-
-            <article class="guias">
-                <h3>Guías de viaje</h3>
-                <p>Encuentra recomendaciones, itinerarios y consejos prácticos para organizar tus viajes.</p>
-                <span class="d-inline-block proximamente-w" tabindex="0" data-bs-toggle="popover"
-                    data-bs-trigger="hover focus" data-bs-content="Esta sección estará disponible próximamente.">
-                    <button type="button" class="btn proximamente" disabled>Próximamente!</button>
-                </span>
-            </article>
-
-            <article class="consejos">
-                <h3>Consejos para viajeros</h3>
-                <p>Descubre herramientas y recomendaciones que pueden ayudarte antes y durante cada viaje.</p>
-            </article>
-        </div> -->
-
-        <!-- lista de herramientas-beneficios -->
-        <!-- <h2>¿Por qué elegir Tripdate?</h2>
-
-        <div class="herramientas">
-            <ul>
-                <li class="img-1">
-                    <figure><img class="por-que" src="img/ideas-destinos.webp"
-                            alt="Mapa, monumentos, diferentes clima, ideas para tus nuevos destinos.">
-                        <figcaption>Ideas para descubrir nuevos destinos.</figcaption>
-                    </figure>
-
-                </li>
-                <li class="img-2">
-                    <figure><img class="por-que" src="img/guias-viajes.webp"
-                            alt="Libreta con anotaciones, pasaporte, y el paso a paso de tu viaje.">
-                        <figcaption>Guías sencillas para organizar tus viajes.</figcaption>
-                    </figure>
-
-                </li>
-                <li class="img-3">
-                    <figure><img class="por-que" src="img/consejos-experiencias.webp"
-                            alt="Viajera observando el paisaje junto con una reseña de 5 estrellas.">
-                        <figcaption>Consejos basados en experiencias viajeras.</figcaption>
-                    </figure>
-
-                </li>
-                <li class="img-4">
-                    <figure><img class="por-que" src="img/recomendaciones-actividades.webp"
-                            alt="Cámara de fotos con diferentes fotografías de lugares y actividades.">
-                        <figcaption>Recomendaciones de lugares y actividades.</figcaption>
-                    </figure>
-
-                </li>
-            </ul>
-        </div>
-        </section>
-
     </main>
 
     <footer>
+        <div class="footer-back">
+        </div>
+        <!-- <div>
+            <img src="./img/tripdate-logo.webp" alt="Tripdate. Tu próxima cita es con el mundo.">
+        </div> -->
+
         <!-- copyright -->
-        <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
+        <!-- <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p> -->
 
         <!-- lista de redes sociales -->
-        <!-- <ul>
+        <ul>
             <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
             <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
             <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        </ul> -->
+        </ul>
 
-    </footer>
+        </footer>
 
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script>
-        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script>
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
 
-        [...popoverTriggerList].forEach(popoverTriggerEl => {
-            new bootstrap.Popover(popoverTriggerEl, {
-                placement: 'bottom',
-                offset: [0, 5]
+            [...popoverTriggerList].forEach(popoverTriggerEl => {
+                new bootstrap.Popover(popoverTriggerEl, {
+                    placement: 'bottom',
+                    offset: [0, 5]
+                });
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>

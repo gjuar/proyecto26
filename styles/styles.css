@@ -166,6 +166,11 @@ main {
     grid-area: main;
     display: flex;
     flex-direction: column;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
@@ -231,7 +236,6 @@ main {
     color: #FFF8F0;
 }
 
-
 .hero-button {
     background-color: #E76F51;
     color: #FFF8F0;
@@ -244,6 +248,8 @@ main {
     width: fit-content;
 }
 
+
+/* seccion destinos destacados */
 .destacados {
     display: flex;
     flex-direction: column;
@@ -270,6 +276,7 @@ main {
     margin: 0;
 }
 
+/* cards - destinos destacados */
 .destacados-cards {
     display: flex;
     flex-direction: column;
@@ -357,108 +364,72 @@ main {
     padding: 0;
 }
 
+/* servicios */
 
+.servicios h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
 
-
-
-
-
-
-section {
+.servicios-item {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
-
-
-.img-general {
-    border-radius: 2rem;
-}
-
-.trip-carousel {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.trip-carousel img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
+.servicios-item img {
+    width: 60px;
+    height: 60px;
     object-fit: cover;
 }
 
-.servicios {
+.servicios-item-text {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 1rem;
+    justify-content: space-between;
+    padding: 0.5rem;
 }
 
-.servicios article {
-    background: linear-gradient(135deg, #F3E2CF, #F8DDBF);
-    padding: 1.7rem;
-    border-radius: 20px;
-    border: 2px solid #493657;
-}
-
-.proximamente-w {
-    display: inline-block;
-}
-
-.proximamente {
-    width: 100%;
-}
-
-.proximamente:disabled {
-    background-color: #493657;
-    color: #e8e4eb;
-    font-size: 1.5rem;
-}
-
-.herramientas ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    list-style-type: none;
+.servicios-item-text h3,
+.servicios-item-text p {
+    margin: 0;
     padding: 0;
 }
 
-.herramientas figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3rem;
+.servicios-item-text h3 {
+    font-size: 1rem;
 }
 
-.por-que {
-    border-radius: 3rem;
+.servicios-item-text p {
+    font-size: 1.5rem;
+    line-height: 0.8;
+    font-weight: 200;
 }
 
-.img-destinos {
-    border-radius: 15%;
-}
-
-.destinos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "roma"
-        "paris"
-        "amsterdam";
-    gap: 2rem;
-}
-
-#roma {
-    grid-area: roma;
-}
-
-#paris {
-    grid-area: paris;
-}
-
-#amsterdam {
-    grid-area: amsterdam;
-}
 
 /* footer*/
+
+footer {
+    background-color: #493657;
+    margin: 0;
+}
+
+.footer-back {
+    position: relative;
+    background-color: #f3e2cf;
+    color: #F3E2CF;
+
+}
+
+.footer-back::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -15%;
+    width: 130%;
+    height: 50px;
+    background-color: #f3e2cf;
+    border-radius: 0 0 50% 50%;
+}
