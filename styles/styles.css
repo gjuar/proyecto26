@@ -277,6 +277,26 @@ main section {
 } */
 
 
+.destacados-cards {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 1rem 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.destacados-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.destacados-cards > div {
+    flex: 0 0 85%;
+}
+
+
 .card-roma {
   display: flex;
   align-items: end;
@@ -362,12 +382,6 @@ main section {
   font-size: 1.5rem;
   text-align: center;
 }
-
-/* .servicios-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .servicios-item {
   display: grid;
@@ -518,36 +532,40 @@ footer p {
     background-color: #C94F35;
 }
 
-
+/* media-query - tablet */
 @media (min-width: 768px) {
   header {
     padding: 0 2rem 0 2rem;
   }
 
+
+  /* navbar */
   .navbar-toggler {
     padding: 0.7rem;
   }
 
   .navbar-toggler-icon {
-        width: 60px;
-        height: 40px;
-        border-top-width: 8px;
-        border-bottom-width: 8px;
-    }
+    width: 60px;
+    height: 40px;
+    border-top-width: 8px;
+    border-bottom-width: 8px;
+  }
 
   .navbar-toggler-icon::before {
-      border-top-width: 7px;
+    border-top-width: 7px;
   }
 
   .navbar .nav-link,
-.navbar .nav-link.show {
-  font-size: 1.8rem;
-}
+  .navbar .nav-link.show {
+    font-size: 1.8rem;
+  }
 
-.navbar .dropdown-item {
-  font-size: 1.3rem;
-}
+  .navbar .dropdown-item {
+    font-size: 1.3rem;
+  }
 
+
+  /* hero */
   .hero-content {
     gap: 0.8rem;
   }
@@ -564,15 +582,16 @@ footer p {
   .hero-text {
     font-size: 2.8rem;
     font-weight: 400;
-  }  
+  }
 
   .hero-button {
     font-size: 2.2rem;
   }
 
+  /* carrusel destinos*/
   .destacados-cards > div {
-    flex-basis: 45%;
-  }
+        flex-basis: 45%;
+    }
 
   .destacados-eyebrow {
     font-size: 2rem;
@@ -584,16 +603,80 @@ footer p {
   }
 
 
+  /* que ofrecemos */
+  .servicios h2 {
+    font-size: 3rem;
+  }
+
+  .servicios-item {
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .servicios-item-text {
+    padding-right: 8rem;
+  }
+
+  .servicios-icon img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .servicios-item-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .servicios-item-text p {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  /* footer */
+
+  .footer-logo img {
+    width: 40%;
+  }
+  
+  .img-icons {
+    width: 50px;
+  }
+
+  .footer-newsletter {
+    max-width: 500px;
+  }
+
+  .newsletter-form .newsletter-btn {
+    font-size: 2rem;
+  }
+
+  .newsletter-form .form-control {
+    font-size: 2rem;
+  }
+
+  footer p {
+  font-size: 2rem;
+}
 }
 
+
+
+/* media-query desktop */
 @media (min-width: 1024px) {
+  .navbar .nav-link,
+  .navbar .nav-link.show {
+    font-size: 1.5rem;
+  }
+
+  .navbar .dropdown-item {
+    font-size: 1.1rem;
+  }
 
 
 
+.destacados-cards {
+      justify-content: center;
+}
 
-
-
-  /* .destacados-cards > div {
+  .destacados-cards > div {
         flex-basis: 32%;
-    } */
+    }
 }
