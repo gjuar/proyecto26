@@ -24,15 +24,18 @@
     <header>
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container-fluid nav-header">
+
                 <!-- logo -->
                 <img class="nav-title" src="./img/tripdate-logo.webp" alt="Tripdate. Tu proxima cita es con el mundo.">
+
                 <!-- hamburguesa -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <!-- menu -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav align-items-center">
@@ -63,6 +66,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <!-- boton -->
                 <div>
                     <a class="nav-button" href="./contacto.html">Planificá tu viaje →</a>
@@ -131,6 +135,7 @@
             <!-- servicios -->
             <div class="servicios">
                 <h2>¿Qué ofrecemos?</h2>
+                <p class="servicios-text">Todo lo que necesitás para vivir una experiencia inolvidable.</p>
                 <div class="servicios-list">
 
                     <!-- guias de viaje -->
@@ -144,6 +149,11 @@
                         </div>
                     </div>
 
+                    <!-- separacion -->
+                    <div class="servicios-separador">
+                        <img src="./img/separador.webp" alt="Separador">
+                    </div>
+
                     <!-- planifica tu viaje -->
                     <div class="servicios-item">
                         <div class="servicios-icon">
@@ -153,6 +163,11 @@
                             <h3>Planificá tu viaje</h3>
                             <p>Te ayudamos a organizar cada detalle de tu aventura.</p>
                         </div>
+                    </div>
+
+                    <!-- separacion -->
+                    <div class="servicios-separador">
+                        <img src="./img/separador.webp" alt="Separador">
                     </div>
 
                     <!-- planifica tu viaje -->
@@ -171,37 +186,41 @@
     </main>
 
     <footer>
-        <div class="footer-logo">
-            <img src="./img/tripdate-logo.webp" alt=Tripdate logo">
-        </div>
-
-        <div class="footer-redes">
-            <!-- lista de redes sociales -->
-            <ul>
-                <li><a href="https://www.instagram.com" target="_blank"><img class="img-icons"
-                            src="./img/icon-instagram.webp" alt="Icono de Instagram"></a></li>
-                <li><a href="https://www.tiktok.com" target="_blank"><img class="img-icons" src="./img/icon-tiktok.webp"
-                            alt="Icono de TikTok"></a></li>
-                <li><a href="https://www.youtube.com" target="_blank"><img class="img-icons"
-                            src="./img/icon-youtube.webp" alt="Icono de YouTube"></a></li>
-                <li><a href="https://www.spotify.com" target="_blank"><img class="img-icons"
-                            src="./img/icon-spotify.webp" alt="Icono de Spotify"></a></li>
-            </ul>
-        </div>
-
-        <div class="footer-newsletter">
-            <form>
-                <div class="input-group newsletter-form">
-                    <input type="email" class="form-control" placeholder="Tu correo electrónico"
-                        aria-label="Tu correo electrónico" required>        
-                    <button class="btn newsletter-btn" type="submit">Suscribirme<span aria-hidden="true">→</span>
-                    </button>
-                </div>
-            </form>
+        <div class="footer-bar">
+            <div class="footer-logo">
+                <img src="./img/tripdate-logo.webp" alt=Tripdate logo">
+            </div>
+        
+            <div class="footer-redes">
+                <!-- lista de redes sociales -->
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><img class="img-icons"
+                                src="./img/icon-instagram.webp" alt="Icono de Instagram"></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank"><img class="img-icons" src="./img/icon-tiktok.webp"
+                                alt="Icono de TikTok"></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><img class="img-icons" src="./img/icon-youtube.webp"
+                                alt="Icono de YouTube"></a></li>
+                    <li><a href="https://www.spotify.com" target="_blank"><img class="img-icons" src="./img/icon-spotify.webp"
+                                alt="Icono de Spotify"></a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-newsletter">
+                <form>
+                    <div class="input-group newsletter-form">
+                        <input type="email" class="form-control" placeholder="Tu correo electrónico"
+                            aria-label="Tu correo electrónico" required>
+                        <button class="btn newsletter-btn" type="submit">Suscribirme<span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <!-- copyright -->
-        <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
+        <div class="footer-copy">
+            <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
+        </div>
 
     </footer>
 
