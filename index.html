@@ -109,7 +109,7 @@
                             <img class="card-ubi" src="./img/icono-ubicacion.webp" alt="Icono de ubicacion">
                             <div class="card-text">
                                 <h3>París</h3>
-                                <p>Arte, cultura y romante</p>
+                                <p>Arte, cultura y romance</p>
                             </div>
                             <a href="">→</a>
                         </div>
@@ -121,7 +121,7 @@
                             <img class="card-ubi" src="./img/icono-ubicacion.webp" alt="Icono de ubicacion">
                             <div class="card-text">
                                 <h3>Ámsterdam</h3>
-                                <p>Canales, bicicletas y</p>
+                                <p>Canales, bicicletas y libertad</p>
                             </div>
                             <a href="">→</a>
                         </div>
@@ -136,7 +136,9 @@
 
                     <!-- guias de viaje -->
                     <div class="servicios-item">
-                        <img src="./img/icon-guias.webp" alt="">
+                        <div class="servicios-icon">
+                            <img src="./img/icon-guias.webp" alt="">
+                        </div>
                         <div class="servicios-item-text">
                             <h3>Guías de viaje</h3>
                             <p>Consejos, rutas y experiencias reales para cada destino.</p>
@@ -145,60 +147,79 @@
 
                     <!-- planifica tu viaje -->
                     <div class="servicios-item">
-                        <img src="./img/icon-planifica.webp" alt="">
+                        <div class="servicios-icon">
+                            <img src="./img/icon-planifica.webp" alt="">
+                        </div>
                         <div class="servicios-item-text">
                             <h3>Planificá tu viaje</h3>
                             <p>Te ayudamos a organizar cada detalle de tu aventura.</p>
                         </div>
                     </div>
 
-                    <!-- experiencias unicas -->
+                    <!-- planifica tu viaje -->
                     <div class="servicios-item">
-                        <img src="./img/icon-experiencias.webp" alt="">
+                        <div class="servicios-icon">
+                            <img src="./img/icon-experiencias.webp" alt="">
+                        </div>
                         <div class="servicios-item-text">
                             <h3>Experiencias únicas</h3>
                             <p>Actividades, tours y lugares imperdibles.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-back">
+        <div class="footer-logo">
+            <img src="./img/tripdate-logo.webp" alt=Tripdate logo">
         </div>
-        <!-- <div>
-            <img src="./img/tripdate-logo.webp" alt="Tripdate. Tu próxima cita es con el mundo.">
-        </div> -->
+
+        <div class="footer-redes">
+            <!-- lista de redes sociales -->
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><img class="img-icons"
+                            src="./img/icon-instagram.webp" alt="Icono de Instagram"></a></li>
+                <li><a href="https://www.tiktok.com" target="_blank"><img class="img-icons" src="./img/icon-tiktok.webp"
+                            alt="Icono de TikTok"></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><img class="img-icons"
+                            src="./img/icon-youtube.webp" alt="Icono de YouTube"></a></li>
+                <li><a href="https://www.spotify.com" target="_blank"><img class="img-icons"
+                            src="./img/icon-spotify.webp" alt="Icono de Spotify"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-newsletter">
+            <form>
+                <div class="input-group newsletter-form">
+                    <input type="email" class="form-control" placeholder="Tu correo electrónico"
+                        aria-label="Tu correo electrónico" required>        
+                    <button class="btn newsletter-btn" type="submit">Suscribirme<span aria-hidden="true">→</span>
+                    </button>
+                </div>
+            </form>
+        </div>
 
         <!-- copyright -->
-        <!-- <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p> -->
+        <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
 
-        <!-- lista de redes sociales -->
-        <ul>
-            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
-            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        </ul>
+    </footer>
 
-        </footer>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
 
-        <!-- bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-        <script>
-            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-
-            [...popoverTriggerList].forEach(popoverTriggerEl => {
-                new bootstrap.Popover(popoverTriggerEl, {
-                    placement: 'bottom',
-                    offset: [0, 5]
-                });
+        [...popoverTriggerList].forEach(popoverTriggerEl => {
+            new bootstrap.Popover(popoverTriggerEl, {
+                placement: 'bottom',
+                offset: [0, 5]
             });
-        </script>
+        });
+    </script>
 </body>
 
 </html>
