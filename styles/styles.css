@@ -713,7 +713,18 @@ footer p {
   .navbar .nav-link,
   .navbar .nav-link.show {
     font-size: 1.5rem;
+    transition: color 0.3s ease;
   }
+
+  .navbar .nav-link:hover {
+    color: #E76F51;
+}
+
+.navbar .nav-link:focus-visible {
+    outline: 2px solid #E76F51;
+    outline-offset: 4px;
+    border-radius: 3px;
+}
 
   .navbar .dropdown-item {
     font-size: 1.1rem;
