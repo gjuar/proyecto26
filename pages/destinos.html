@@ -14,28 +14,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Zen+Dots&display=swap"
         rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <!-- title -->
     <title>Tripdate · Destinos</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary header">
-            <div class="container-fluid">
-                <a class="navbar-brand nav-title" href="../index.html">Tripdate</a>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid nav-header">
+
+                <!-- logo -->
+                <img class="nav-title" src="../img/tripdate-logo.webp" alt="Tripdate. Tu proxima cita es con el mundo.">
+
+                <!-- hamburguesa -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav align-items-center">
+
+                <!-- menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
+                        <!-- dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" aria-current="page" href="./destinos.html" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link active dropdown-toggle" href="./destinos.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Destinos
                             </a>
                             <ul class="dropdown-menu">
@@ -56,56 +66,149 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- boton -->
+                <div>
+                    <a class="nav-button" href="./contacto.html">Planificá tu viaje →</a>
+                </div>
             </div>
-        </nav>    
+        </nav>
     </header>
 
     <main>
-        <section class="info-destinos">
-            <!-- Info de la sección -->
-            <div>
-                <h1>Destinos</h1>
-                <p>Explora algunos de nuestros destinos favoritos y encuentra inspiración para tu próximo viaje. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, esse quod. Inventore quis culpa, laborum itaque aliquid amet! Repellat vitae dicta exercitationem numquam non consequuntur, facere tenetur. Consequuntur, est porro?
-                Facere odit ad porro similique animi amet est! Quaerat modi nostrum praesentium aliquam earum dolores odio tempore sed optio quos eaque est soluta incidunt facilis fuga, dolore, nam vitae inventore?
-                Iure, cumque omnis aut obcaecati recusandae excepturi consequuntur nulla et sequi pariatur autem quod dolores adipisci dolor, quas expedita architecto odit ab. Pariatur animi doloribus dolores fugiat alias enim vero?</p>
+        <section>
+            <div class="hero">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">TU PRÓXIMA AVENTURA</p>
+                    <h1>El mundo está lleno
+                        <span>de lugares increíbles</span>
+                    </h1>
+                    <p class="hero-text">Elegí el destino, encontrá inspiración y empezá a imaginar tu próximo viaje.
+                    </p>
+                    <a class="hero-button" href="#destinos">Explorá destinos →</a>
+                </div>
             </div>
 
-            <h2>Destinos destacados</h2>
+            <!-- destinos -->
+            <div class="destacados">
+                <p class="destacados-eyebrow">INSPIRACIÓN PARA TU VIAJE</p>
+                <h2>¿A dónde <span>vamos hoy?</span></h2>
+                <p class="destacados-text">Desde ciudades llenas de historia hasta rincones para perderse sin apuro.
+                    Estas son algunas ideas para tu próxima escapada.</p>
+            </div>
 
-            <!-- Artículos -->
-            <div class="destinos">
-                <article id="roma">
-                    <h3>Roma</h3>
-                    <img class="img-destinos" src="../img/roma.webp" alt="Mapa de Roma">
-                    <p>Historia, gastronomía y algunos de los monumentos más reconocidos de Europa.</p>
-                </article>
+            <div class="destinos" id="destinos">
 
-                <article id="paris">
-                    <h3>París</h3>
-                    <img class="img-destinos" src="../img/paris.webp" alt="Mapa de París">
-                    <p>Descubre sus barrios, monumentos, gastronomía y lugares imprescindibles.</p>
-                </article>
+                <!-- card roma -->
+                <div class="card-destinos">
+                    <div class="card-destinos-roma"></div>
+                    <div class="card-destinos-text">
+                        <p class="card-destinos-eyebrow">ITALIA · HISTORIA</p>
+                        <h2>Roma</h2>
+                        <p class="card-destinos-text-p">Calles con siglos de historia, plazas llenas de vida y
+                            sabores que invitan a quedarse un rato
+                            más.</p>
+                        <ul>
+                            <li>Visitá el Coliseo y el Foro Romano.</li>
+                            <li>Perdete por Trastevere.</li>
+                            <li>Reservá tiempo para disfrutar la gastronomía local.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="card-destinos-link" href="./guias.html#roma">Descubrí la guía de Roma →</a>
+                    </div>
+                </div>
 
-                <article id="amsterdam">
-                    <h3>Ámsterdam</h3>
-                    <img class="img-destinos" src="../img/amsterdam.webp" alt="Mapa de Ámsterdam">
-                    <p>Canales, arquitectura y una ciudad perfecta para recorrer durante una escapada.</p>
-                </article>
+                <!-- card paris -->
+                <div class="card-destinos">
+                    <div class="card-destinos-paris"></div>
+                    <div class="card-destinos-text">
+                        <p class="card-destinos-eyebrow">FRANCIA · ARTE Y CULTURA</p>
+                        <h2>París</h2>
+                        <p class="card-destinos-text-p">Museos, arquitectura, cafeterías y paseos a orillas del Sena
+                            para armar un viaje a tu propio ritmo.</p>
+                        <ul>
+                            <li>Recorré los alrededores de la Torre Eiffel.</li>
+                            <li>Elegí un museo según tus intereses.</li>
+                            <li>Disfrutá una caminata por Montmartre.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="card-destinos-link" href="./guias.html#paris">Descubrí la guía de París →</a>
+                    </div>
+                </div>
+
+                <!-- card amsterdam -->
+                <div class="card-destinos">
+                    <div class="card-destinos-amsterdam"></div>
+                    <div class="card-destinos-text">
+                        <p class="card-destinos-eyebrow">PAÍSES BAJOS · AIRE LIBRE</p>
+                        <h2>Ámsterdam</h2>
+                        <p class="card-destinos-text-p">Canales, bicicletas, barrios creativos y una atmósfera
+                            relajada para explorar sin necesidad de correr.</p>
+                        <ul>
+                            <li>Paseá por el cinturón de canales.</li>
+                            <li>Descubrí la ciudad en bicicleta con precaución.</li>
+                            <li>Reservá con tiempo las visitas más populares.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="card-destinos-link" href="./guias.html#amsterdam">Descubrí la guía de Ámsterdam
+                            →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-destinos">
+                <div class="cta-destinos-text">
+                    <p class="cta-destinos-text-eyebrow">EL VIAJE EMPIEZA CON UNA IDEA</p>
+                    <h3>¿Tenés otro destino en mente?</h3>
+                    <p class="cta-destinos-text-p">Contanos qué te gustaría vivir y empezá a darle forma a tu próxima
+                        aventura.</p>
+                </div>
+                <div class="cta-destinos-button">
+                    <a class="button-planifica" href="./contacto.html">Planificá tu viaje →</a>
+                </div>
             </div>
         </section>
-
     </main>
 
     <footer>
-        <!-- Copyright -->
-        <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
+        <div class="footer-bar">
+            <div class="footer-logo">
+                <img src="../img/tripdate-logo.webp" alt=Tripdate logo">
+            </div>
 
-        <!-- Lista de redes sociales -->
-        <ul>
-            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
-            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        </ul>
+            <div class="footer-redes">
+                <!-- lista de redes sociales -->
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-instagram.webp" alt="Icono de Instagram"></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-tiktok.webp" alt="Icono de TikTok"></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-youtube.webp" alt="Icono de YouTube"></a></li>
+                    <li><a href="https://www.spotify.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-spotify.webp" alt="Icono de Spotify"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <form>
+                    <div class="input-group newsletter-form">
+                        <input type="email" class="form-control" placeholder="Tu correo electrónico"
+                            aria-label="Tu correo electrónico" required>
+                        <button class="btn newsletter-btn" type="submit">Suscribirme<span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="footer-copy">
+            <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
+        </div>
 
     </footer>
 
@@ -113,6 +216,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+        [...popoverTriggerList].forEach(popoverTriggerEl => {
+            new bootstrap.Popover(popoverTriggerEl, {
+                placement: 'bottom',
+                offset: [0, 5]
+            });
+        });
+    </script>
 </body>
 
 </html>

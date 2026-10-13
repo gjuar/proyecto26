@@ -398,6 +398,8 @@ main section {
   box-shadow: 2px 2px 10px rgba(48, 45, 51, 0.18);
   border-radius: 1.5rem;
   margin: 0 1rem 0 1rem;
+  padding-bottom: 1.5rem;
+
 }
 
 .card-destinos-roma {
@@ -432,7 +434,6 @@ main section {
   flex-direction: column;
   gap: 0.5rem;
   padding: 1.3rem 1.3rem 0 1.3rem;
-  margin-bottom: 1rem;
 }
 
 .card-destinos-text h2 {
@@ -463,8 +464,9 @@ main section {
   font-size: 1.25rem;
   font-weight: 700;
   border-bottom: 2px solid #E76F51;
-  padding-bottom: 0.15rem;
+  padding-bottom: 0.3rem;
   width: fit-content;
+  margin: 1.3rem;
 }
 
 .cta-destinos {
@@ -1044,6 +1046,32 @@ footer p {
     display: inline-block;
   }
 
+  .destinos {
+    grid-template-columns: repeat(3, minmax(0, 350px));
+    gap: 2rem;
+  }
+
+  .card-destinos {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .cta-destinos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-destinos-button {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2rem;
+  }
+
   /* footer */
   footer {
     display: flex;
@@ -1076,7 +1104,6 @@ footer p {
     transition: filter 0s ease,
                 transform 0.3s;
   }
-
 
   .img-icons:focus-visible {
     outline: 2px solid #E76F51;
