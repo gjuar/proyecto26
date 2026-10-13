@@ -506,6 +506,12 @@ main section {
                 transform 0.3s ease;
 }
 
+.card-consejo {
+  margin: 0 3rem 0 3rem;
+  padding: 1rem;
+  border-left: 4px solid #F4A261;
+}
+
 /* servicios */
 .servicios h2 {
   font-size: 1.5rem;
