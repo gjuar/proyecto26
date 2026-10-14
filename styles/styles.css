@@ -1071,12 +1071,35 @@ footer p {
     margin-right: auto;
   }
 
+  .cta-destinos h3 {
+    font-size: 2.1rem;
+  }
+
   .cta-destinos-button {
     display: flex;
     justify-content: end;
     align-items: center;
     padding-right: 2rem;
   }
+
+  .cta-destinos-text-eyebrow {
+    font-size: 1.7rem;
+  }
+
+  .cta-destinos-text-p {
+    font-size: 1.5rem;
+  }
+
+  .button-planifica:hover {
+    background-color: #be5c43;
+    color: #F3E2CF;
+    transform: translateY(-2px);
+  }
+
+  .card-destinos-link:hover {
+    border-bottom: 2px solid #F4A261;
+  }
+
 
   /* footer */
   footer {
@@ -1134,4 +1157,5 @@ footer p {
     font-size: 1.3rem;
     margin: 0;
   }
+
 }
