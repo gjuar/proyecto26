@@ -572,6 +572,87 @@ main section {
   height: 150px;
 }
 
+.nuestra-historia {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+
+.nuestra-historia h2 span {
+  color: #E76F51;
+  font-style: italic;
+}
+
+.nuestra-historia-t-eyebrow {
+  color: #bd5b42;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.nuestra-historia-t-text {
+  font-size: 1.3rem;
+  line-height: 1;
+  letter-spacing: 1.2px;
+}
+
+.nuestra-historia-img {
+  background-image: url(../img/hero.webp);
+  min-height: 260px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px rgba(48, 45, 51, 0.18);
+}
+
+.nuestro-modo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.nuestro-modo span {
+  display: block;
+  color: #E76F51;
+  font-style: italic;
+}
+
+.nuestro-modo-eyebrow {
+  color: #bd5b42;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.nuestro-modo-cards {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+}
+
+.nuestro-modo-card {
+  background-color: #FFF8F0;
+  box-shadow: 2px 2px 10px rgba(48, 45, 51, 0.18);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border-bottom: 4px solid #E76F51;
+}
+
+.nuestro-modo-card-eyebrow {
+  font-family: "Zen Dots", sans-serif;
+  color: #E76F51;
+  font-size: 1.3rem;
+}
+
+.nuestro-modo-card-text {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
 /* footer*/
 
 footer {
@@ -1098,6 +1179,39 @@ footer p {
 
   .card-destinos-link:hover {
     border-bottom: 2px solid #F4A261;
+  }
+
+  .nuestra-historia {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding: 5rem;
+    gap: 3rem;
+  }
+
+  .nuestra-historia-t-eyebrow {
+    font-size: 2rem;
+  }
+
+  .nuestra-historia h2 {
+    font-size: 4.5rem;
+  }
+
+  .nuestra-historia-t-text {
+    font-size: 1.7rem;
+  }
+
+  .nuestro-modo-cards {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  .nuestro-modo span {
+  display: inline;
+  }
+
+  .button-planifica {
+    font-size: 1.8rem;
+    font-weight: 600;
   }
 
 

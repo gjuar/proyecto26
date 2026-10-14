@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,25 +14,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Zen+Dots&display=swap"
         rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <!-- title -->
     <title>Tripdate · Nosotros</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary header">
-            <div class="container-fluid">
-                <a class="navbar-brand nav-title" href="../index.html">Tripdate</a>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid nav-header">
+
+                <!-- logo -->
+                <img class="nav-title" src="../img/tripdate-logo.webp" alt="Tripdate. Tu proxima cita es con el mundo.">
+
+                <!-- hamburguesa -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav align-items-center">
+
+                <!-- menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
+                        <!-- dropdown -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="./destinos.html" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,62 +59,128 @@
                             <a class="nav-link" href="./guias.html">Guías</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
+
+                <!-- boton -->
+                <div>
+                    <a class="nav-button" href="./contacto.html">Planificá tu viaje →</a>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- Info sección -->
         <section>
-            <h1>Sobre Tripdate</h1>
+            <div class="hero">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">HOLA, SOMOS TRIPDATE</p>
+                    <h1>Creemos que viajar
+                        <span>te cambia la mirada</span>
+                    </h1>
+                    <p class="hero-text">Creamos un espacio para inspirarte, ayudarte a planificar y acompañarte desde
+                        la primera idea hasta el próximo recuerdo.
+                    </p>
+                    <a class="hero-button" href="./destinos.html">Buscá inspiración →</a>
+                </div>
+            </div>
 
-            <p>Tripdate nace con la idea de compartir experiencias, recomendaciones e inspiración para descubrir nuevos lugares alrededor del mundo.</p>
+            <!-- nuestra historia -->
+            <div class="nuestra-historia">
+                <div class="nuestra-historia-t">
+                    <p class="nuestra-historia-t-eyebrow">NUESTRA HISTORIA</p>
+                    <h2>La próxima cita <span>es con el mundo</span></h2>
+                    <p class="nuestra-historia-t-text">En Tripdate nos mueve la curiosidad. Sabemos que organizar un viaje puede ser tan emocionante
+                        como abrumador: hay lugares por descubrir, rutas por elegir y muchas decisiones por tomar.</p>
+                    <p class="nuestra-historia-t-text">Por eso reunimos inspiración, guías y consejos para que puedas ordenar tus ideas y crear una
+                        experiencia que tenga sentido para vos. No creemos en una única forma de viajar: cada persona
+                        encuentra su propio camino.</p>
+                </div>
+                <div class="nuestra-historia-img"></div>
+            </div>
+
+            <!-- nuestro modo -->
+            <div class="nuestro-modo">
+                <p class="nuestro-modo-eyebrow">NUESTRO MODO DE VIAJAR</p>
+                <h2>Lo que nos <span>inspira</span></h2>
+                <div class="nuestro-modo-cards">
+                    <!-- tarjeta 01 -->
+                    <div class="nuestro-modo-card">
+                        <p class="nuestro-modo-card-eyebrow">01</p>
+                        <h3>Explorá</h3>
+                        <p class="nuestro-modo-card-text">Te acercamos destinos e ideas para mirar más allá de lo conocido y descubrir qué te entusiasma.</p>
+                    </div>
+                    <!-- tarjeta 02 -->
+                    <div class="nuestro-modo-card">
+                        <p class="nuestro-modo-card-eyebrow">02</p>
+                        <h3>Planificá</h3>
+                        <p class="nuestro-modo-card-text">Ordená tus opciones con guías y recomendaciones prácticas, sin perder la libertad de improvisar.</p>
+                    </div>
+                    <!-- tarjeta 03 -->
+                    <div class="nuestro-modo-card">
+                        <p class="nuestro-modo-card-eyebrow">03</p>
+                        <h3>Viví</h3>
+                        <p class="nuestro-modo-card-text">Hacé lugar para los encuentros, los desvíos inesperados y esas historias que después vas a contar.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- cta -->
+            <div class="cta-destinos">
+                <div class="cta-destinos-text">
+                    <p class="cta-destinos-text-eyebrow">¿EMPEZAMOS?</p>
+                    <h3>Tu próxima historia te espera</h3>
+                    <p class="cta-destinos-text-p">Encontrá el destino que te inspira y empezá a planificarlo.</p>
+                </div>
+                <div class="cta-destinos-button">
+                    <a class="button-planifica" href="./destinos.html">Conocé los destinos →</a>
+                </div>
+            </div>
         </section>
-
-        <section>
-            <!-- Artículo -->
-            <h2>Nuestra historia</h2>
-
-            <article>
-                <h3>De viajeros para viajeros</h3>
-
-                <p>Creemos que cada viaje comienza mucho antes de llegar al destino. Investigar, planificar y descubrir nuevos lugares también forma parte de la experiencia. Por eso creamos Tripdate, un espacio donde reunimos destinos, guías y recomendaciones que pueden ayudarte a preparar tu próxima aventura.</p>
-            </article>
-        </section>
-
-        <section>
-            <!-- Lista de objetivos -->
-            <h2>Nuestro objetivo</h2>
-
-            <p>Queremos ayudarte a encontrar inspiración y hacer que organizar un viaje sea una experiencia más sencilla.</p>
-
-            <ul>
-                <li>Compartir destinos interesantes.</li>
-                <li>Crear guías fáciles de consultar.</li>
-                <li>Ofrecer consejos útiles para viajeros.</li>
-                <li>Inspirar nuevas aventuras.</li>
-            </ul>
-        </section>
-        
-    </main> 
+    </main>
 
     <footer>
-        <!-- Copyright -->
-        <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
+        <div class="footer-bar">
+            <div class="footer-logo">
+                <img src="../img/tripdate-logo.webp" alt=Tripdate logo">
+            </div>
 
-        <!-- Lista de redes sociales -->
-            <ul>
-                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-            </ul>
+            <div class="footer-redes">
+                <!-- lista de redes sociales -->
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-instagram.webp" alt="Icono de Instagram"></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-tiktok.webp" alt="Icono de TikTok"></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-youtube.webp" alt="Icono de YouTube"></a></li>
+                    <li><a href="https://www.spotify.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-spotify.webp" alt="Icono de Spotify"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <form>
+                    <div class="input-group newsletter-form">
+                        <input type="email" class="form-control" placeholder="Tu correo electrónico"
+                            aria-label="Tu correo electrónico" required>
+                        <button class="btn newsletter-btn" type="submit">Suscribirme<span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="footer-copy">
+            <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
+        </div>
 
     </footer>
 
@@ -111,5 +188,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+        [...popoverTriggerList].forEach(popoverTriggerEl => {
+            new bootstrap.Popover(popoverTriggerEl, {
+                placement: 'bottom',
+                offset: [0, 5]
+            });
+        });
+    </script>
 </body>
+
 </html>
