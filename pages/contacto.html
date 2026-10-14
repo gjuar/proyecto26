@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,25 +14,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Zen+Dots&display=swap"
         rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <!-- title -->
     <title>Tripdate · Contacto</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary header">
-            <div class="container-fluid">
-                <a class="navbar-brand nav-title" href="../index.html">Tripdate</a>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid nav-header">
+
+                <!-- logo -->
+                <img class="nav-title" src="../img/tripdate-logo.webp" alt="Tripdate. Tu proxima cita es con el mundo.">
+
+                <!-- hamburguesa -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav align-items-center">
+
+                <!-- menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
+                        <!-- dropdown -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="./destinos.html" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,65 +62,136 @@
                             <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
+                </div>
+
+                <!-- boton -->
+                <div>
+                    <a class="nav-button" href="./contacto.html">Planificá tu viaje →</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- Formulario de contacto -->
         <section>
-            <h1>Contacto</h1>
+            <div class="hero">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">HABLEMOS DE VIAJES</p>
+                    <h1>¿Pensando en viajar?
+                        <span>Estamos para ayudarte</span>
+                    </h1>
+                    <p class="hero-text">Compartí tu idea, contanos qué te gustaría descubrir y empezá a darle forma a
+                        tu próxima aventura.
+                    </p>
+                </div>
+            </div>
 
-            <p>¿Tienes alguna consulta, recomendación o propuesta? Puedes comunicarte con nosotros completando el siguiente formulario.</p>
+            <!-- contanos tu idea -->
+            <div class="contact-content">
+                <div class="tu-idea">
+                    <p class="nuestro-modo-eyebrow">CONTANOS TU IDEA</p>
+                    <h2>Todo gran viaje <span>empieza hablando</span></h2>
+                    <p>¿Necesitás inspiración para elegir un destino? ¿Querés compartir una sugerencia sobre nuestras
+                        guías?
+                        Escribinos usando el formulario.</p>
+                    <div class="tu-idea-card">
+                        <h3>¿Qué nos podés contar?</h3>
+                        <ul>
+                            <li>El destino que te gustaría conocer.</li>
+                            <li>El tipo de experiencia que estás buscando.</li>
+                            <li>Las dudas o ideas que querés compartir con Tripdate.</li>
+                        </ul>
+                    </div>
+                    <p>También podés encontrarnos en nuestras redes sociales.</p>
+                    <div class="tu-idea-links">
+                        <a href="https://www.instagram.com/">Instagram ↗</a>
+                        <a href="https://www.tiktok.com/">TikTok ↗</a>
+                        <a href="https://www.youtube.com/">Youtube ↗</a>
+                    </div>
+                </div>
+
+                <!-- formulario -->
+                <div class="formulario">
+                    <div class="contact-form-card">
+                        <h3>Escribinos</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre"
+                                    placeholder="¿Cómo te llamás?" autocomplete="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="nombre@ejemplo.com" autocomplete="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="destino" class="form-label">¿Qué destino te interesa?</label>
+                                <select class="form-select" id="destino" name="destino">
+                                    <option value="" selected>Elegí una opción</option>
+                                    <option value="roma">Roma</option>
+                                    <option value="paris">París</option>
+                                    <option value="amsterdam">Ámsterdam</option>
+                                    <option value="otro">Otro destino</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Tu mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5"
+                                    placeholder="Contanos qué tenés en mente..." required></textarea>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="acepto" id="privacidad" required>
+                                <label class="form-check-label" for="privacidad">Acepto que se utilicen mis datos para
+                                    responder esta consulta.</label>
+                            </div>
+                            <button class="hero-button contact-submit" type="submit">Enviar consulta →</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <section>
-            <h2>Escríbenos</h2>
-
-            <form>
-
-                <p>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
-                </p>
-
-                <p>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
-                </p>
-
-                <p>
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" placeholder="¿Por qué nos contactas?">
-                </p>
-
-                <p>
-                    <label for="mensaje">Mensaje:</label>
-
-                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu mensaje" required></textarea>
-                </p>
-
-                <button type="submit">Enviar mensaje</button>
-
-            </form>
-        </section>
-        
-    </main> 
+    </main>
 
     <footer>
-        <!-- Copyright -->
-        <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
+        <div class="footer-bar">
+            <div class="footer-logo">
+                <img src="../img/tripdate-logo.webp" alt=Tripdate logo">
+            </div>
 
-        <!-- Lista de redes sociales -->
-            <ul>
-                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-            </ul>
+            <div class="footer-redes">
+                <!-- lista de redes sociales -->
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-instagram.webp" alt="Icono de Instagram"></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-tiktok.webp" alt="Icono de TikTok"></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-youtube.webp" alt="Icono de YouTube"></a></li>
+                    <li><a href="https://www.spotify.com" target="_blank"><img class="img-icons"
+                                src="../img/icon-spotify.webp" alt="Icono de Spotify"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <form>
+                    <div class="input-group newsletter-form">
+                        <input type="email" class="form-control" placeholder="Tu correo electrónico"
+                            aria-label="Tu correo electrónico" required>
+                        <button class="btn newsletter-btn" type="submit">Suscribirme<span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="footer-copy">
+            <p>&copy; 2026 Tripdate. Todos los derechos reservados.</p>
+        </div>
 
     </footer>
 
@@ -117,5 +199,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+        [...popoverTriggerList].forEach(popoverTriggerEl => {
+            new bootstrap.Popover(popoverTriggerEl, {
+                placement: 'bottom',
+                offset: [0, 5]
+            });
+        });
+    </script>
 </body>
+
 </html>
