@@ -7,11 +7,14 @@
 // BASE
 @use "base/reset";
 @use "base/base";
+@use "base/tipografia";
 
 // LAYOUTS
 @use "layouts/header";
+@use "layouts/nav";
 @use "layouts/main";
 @use "layouts/footer";
+
 
 // COMPONENTS
 @use "components/buttons";

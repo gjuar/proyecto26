@@ -1,0 +1,78 @@
+@use "../utilities/variables" as v;
+
+.nav-title {
+    width: 50%;
+    filter: brightness(0) saturate(100%) invert(19%) sepia(47%) saturate(850%) hue-rotate(-128.7deg) brightness(63%) contrast(72%);
+}
+
+// boton hamburguesa - mobile y tablet
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    transition: 0.3s;
+    margin-left: auto;
+    flex-shrink: 0;
+
+    &:focus {
+        box-shadow: none;
+        outline: 2px solid v.$secondary-color;
+        outline-offset: 3px;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    width: 32px;
+    height: 24px;
+    position: relative;
+    border-top: 4px solid v.$primary-color;
+    border-bottom: 4px solid v.$primary-color;
+    border-radius: 3px;
+
+    // línea central
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        border-top: 4px solid v.$primary-color;
+        border-radius: 3px;
+        transform: translateY(-50%);
+    }
+}
+
+// fin boton-hamburguesa
+
+// estilos menu
+.navbar {
+
+    .nav-link,
+    .nav-link.show {
+        color: v.$primary-color;
+        padding: 0.1rem 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-link.active {
+        color: v.$secondary-color;
+    }
+
+    .dropdown-menu {
+        background-color: v.$primary-color;
+    }
+
+    .dropdown-item {
+        color: v.$background-color;
+        text-align: center;
+    }
+}
+
+.nav-button {
+    display: none;
+}
