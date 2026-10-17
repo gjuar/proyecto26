@@ -1,0 +1,13 @@
+@use "../utilities/variables" as v;
+
+header {
+    grid-area: header;
+    font-family: v.$font-primary;
+    background-color: v.$background-color;
+    color: v.$header-color;
+    padding: 0 1rem 0 1rem;
+}
+
+header:has(.navbar-collapse.show)+main .hero {
+    margin-top: 0;
+}

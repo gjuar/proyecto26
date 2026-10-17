@@ -1,0 +1,13 @@
+@use "../utilities/variables" as v;
+
+// body
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: auto 1fr auto;
+    font-family: v.$font-secondary;
+    background-color: v.$background-color;
+    color: v.$text-color;
+    min-height: 100dvh;
+}

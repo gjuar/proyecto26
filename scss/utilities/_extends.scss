@@ -1,0 +1,7 @@
+@use "../utilities/variables" as v;
+
+%heading-style {
+    font-family: v.$font-primary;
+    font-weight: 400;
+    color: v.$primary-color;
+}
