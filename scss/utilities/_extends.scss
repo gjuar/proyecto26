@@ -5,3 +5,21 @@
     font-weight: 400;
     color: v.$primary-color;
 }
+
+%card-city {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 30dvh;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 9px #000000;
+}
+
+%card-destinos-city {
+    min-height: 220px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}

@@ -4,6 +4,24 @@ h1, h2, h3 {
   color: #493657;
 }
 
+.card-roma, .card-paris, .card-amsterdam {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 30dvh;
+  background-size: cover;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 9px #000000;
+}
+
+.card-destinos-roma, .card-destinos-paris, .card-destinos-amsterdam {
+  min-height: 220px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -136,6 +154,268 @@ main section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.hero {
+  height: 50dvh;
+  min-height: unset;
+  background-image: url("../img/hero.webp");
+  background-size: cover;
+  background-position: 65% center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(48, 45, 51, 0.75), rgba(48, 45, 51, 0));
+  z-index: 1;
+}
+.hero h1 {
+  color: #FFF8F0;
+  font-size: 1.9rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+.hero h1 span {
+  display: block;
+  color: #F4A261;
+  font-style: italic;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  background-color: rgba(73, 54, 87, 0.568627451);
+  border-radius: 0.5rem;
+  width: fit-content;
+  color: #F4A261;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.hero-text {
+  padding-right: 4rem;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: #FFF8F0;
+}
+
+.destacados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.destacados h2 {
+  font-size: 1.6rem;
+  width: 60%;
+}
+.destacados h2 span {
+  display: block;
+  color: #E76F51;
+  font-style: italic;
+}
+
+.destacados-eyebrow {
+  color: #BD5B42;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.destacados-text {
+  font-size: 1.7rem;
+  font-weight: 300;
+  width: 50%;
+  line-height: 0.8;
+}
+
+.destinos {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.hero-button {
+  background-color: #E76F51;
+  color: #FFF8F0;
+  padding: 0.6rem 1.3rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+  width: fit-content;
+}
+
+.destacados-cards {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 1rem 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.destacados-cards::-webkit-scrollbar {
+  display: none;
+}
+.destacados-cards > div {
+  flex: 0 0 85%;
+}
+
+.card-roma {
+  background-image: url(../img/card-roma.webp);
+}
+
+.card-paris {
+  background-image: url(../img/card-paris.webp);
+}
+
+.card-amsterdam {
+  background-image: url(../img/card-amsterdam.webp);
+}
+
+.card-back {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7450980392);
+  width: 90%;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.card-back a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #493657;
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding-top: 0.2rem;
+  box-shadow: 1px 1px 10px #000000;
+}
+.card-back img {
+  width: 40px;
+  object-fit: cover;
+}
+
+.card-text {
+  text-align: left;
+}
+.card-text h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+}
+.card-text p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.card-destinos {
+  background-color: #FFF8F0;
+  box-shadow: 2px 2px 10px rgba(48, 45, 51, 0.18);
+  border-radius: 1.5rem;
+  margin: 0 1rem 0 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.card-destinos-roma {
+  background-image: url(../img/card-roma.webp);
+}
+
+.card-destinos-paris {
+  background-image: url(../img/card-paris.webp);
+}
+
+.card-destinos-amsterdam {
+  background-image: url(../img/card-amsterdam.webp);
+}
+
+.card-destinos-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.3rem 1.3rem 0 1.3rem;
+}
+.card-destinos-text h2 {
+  font-size: 1.5rem;
+}
+.card-destinos-text ul {
+  font-size: 1.2rem;
+}
+
+.card-destinos-text-p {
+  font-size: 1.2rem;
+  line-height: 1;
+  width: 400;
+  margin: 0;
+}
+
+.card-destinos-eyebrow {
+  color: #BD5B42;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  margin: 0;
+}
+
+.card-destinos-link {
+  color: #493657;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-bottom: 2px solid #E76F51;
+  padding-bottom: 0.3rem;
+  width: fit-content;
+  margin: 1.3rem;
+}
+
+.cta-destinos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #493657;
+  color: #FFF8F0;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+}
+
+.cta-destinos-text-eyebrow {
+  color: #F4A261;
+  font-size: 1.2rem;
+}
+
+.cta-destinos-text h3 {
+  color: #FFF8F0;
+  font-size: 1.5rem;
+}
+
+.cta-destinos-text-p {
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

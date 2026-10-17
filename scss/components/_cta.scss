@@ -1,0 +1,27 @@
+@use "../utilities/variables" as v;
+
+.cta-destinos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: v.$primary-color;
+    color: v.$header-color;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+}
+
+.cta-destinos-text-eyebrow {
+    color: v.$accent-color;
+    font-size: 1.2rem;
+}
+
+.cta-destinos-text h3 {
+    color: v.$header-color;
+    font-size: 1.5rem;
+}
+
+.cta-destinos-text-p {
+    font-size: 1.5rem;
+    line-height: 1;
+}
