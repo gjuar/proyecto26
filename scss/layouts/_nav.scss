@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .nav-title {
     width: 50%;
@@ -75,4 +76,33 @@
 
 .nav-button {
     display: none;
+}
+
+@include tablet {
+    .navbar-toggler {
+        padding: 0.7rem;
+    }
+
+    .navbar-toggler-icon {
+        width: 60px;
+        height: 40px;
+        border-top-width: 8px;
+        border-bottom-width: 8px;
+
+        &::before {
+            border-top-width: 7px;
+        }
+    }
+
+    .navbar {
+
+        .nav-link,
+        .nav-link.show {
+            font-size: 1.8rem;
+        }
+
+        .dropdown-item {
+            font-size: 1.3rem;
+        }
+    }
 }

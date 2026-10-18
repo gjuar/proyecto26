@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 footer {
     grid-area: footer;
@@ -28,6 +29,14 @@ footer {
     }
 }
 
+@include tablet {
+    .footer-logo {
+        img {
+            width: 40%;
+        }
+    }
+}
+
 .footer-redes {
     display: flex;
     flex-direction: column;
@@ -47,6 +56,12 @@ footer {
 .img-icons {
     width: 30px;
     height: auto;
+}
+
+@include tablet {
+    .img-icons {
+        width: 50px;
+    }
 }
 
 .footer-newsletter {
@@ -103,6 +118,26 @@ footer {
 
         &:active {
             background-color: $eyebrow-color;
+        }
+    }
+}
+
+@include tablet {
+    footer p {
+        font-size: 2rem;
+    }
+
+    .footer-newsletter {
+        max-width: 500px;
+    }
+
+    .newsletter-form {
+        .newsletter-btn {
+            font-size: 2rem;
+        }
+
+        .form-control {
+            font-size: 2rem;
         }
     }
 }

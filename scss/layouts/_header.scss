@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 header {
     grid-area: header;
@@ -10,4 +11,10 @@ header {
 
 header:has(.navbar-collapse.show)+main .hero {
     margin-top: 0;
+}
+
+@include tablet {
+    header {
+        padding: 0 2rem 0 2rem;
+    }
 }

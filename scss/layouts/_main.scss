@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 // main
 main {
@@ -74,6 +75,32 @@ main {
     color: $header-color;
 }
 
+@include tablet {
+    .hero-content {
+        gap: 0.8rem;
+    }
+
+    .hero-eyebrow {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .hero {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    .hero-text {
+        font-size: 2.8rem;
+        font-weight: 400;
+    }
+
+    .hero-button {
+        font-size: 2.2rem;
+    }
+}
+
 // seccion destinos destacados
 .destacados {
     display: flex;
@@ -93,7 +120,6 @@ main {
     }
 }
 
-
 .destacados-eyebrow {
     color: $eyebrow-color;
     font-size: 1.2rem;
@@ -109,6 +135,25 @@ main {
     line-height: 0.8;
 }
 
+@include tablet {
+    .destacados {
+        h2 {
+            font-size: 4rem;
+            width: 100%;
+        }
+    }
+
+    .destacados-cards {
+        &>div {
+            flex-basis: 45%;
+        }
+
+        .destacados-eyebrow {
+            font-size: 2rem;
+        }
+    }
+}
+
 // destinos
 .destinos {
     display: grid;
@@ -118,9 +163,11 @@ main {
 }
 
 // servicios
-.servicios h2 {
-    font-size: 1.5rem;
-    text-align: center;
+.servicios {
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 .servicios-text {
@@ -174,6 +221,38 @@ main {
     img {
         width: 10px;
         height: 150px;
+    }
+}
+
+@include tablet {
+    .servicios {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    .servicios-item {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .servicios-item-text {
+        padding-right: 8rem;
+
+        h3 {
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+    }
+
+    .servicios-icon {
+        img {
+            width: 100px;
+            height: 100px;
+        }
     }
 }
 
