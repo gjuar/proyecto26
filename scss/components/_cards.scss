@@ -1,5 +1,6 @@
 @use "../utilities/variables" as *;
 @use "../utilities/extends" as *;
+@use "../utilities/mixins" as *;
 
 // cards - destinos destacados
 .destacados-cards {
@@ -146,6 +147,20 @@
     margin: 1.3rem;
 }
 
+@include desktop {
+    .card-destinos {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .card-destinos-link {
+        &:hover {
+            border-bottom: 2px solid #F4A261;
+        }
+    }
+}
+
 .card-consejo {
     margin: 0 3rem 0 3rem;
     padding: 1rem;
@@ -176,4 +191,11 @@
 .nuestro-modo-card-text {
     font-size: 1.5rem;
     line-height: 1;
+}
+
+@include desktop {
+    .nuestro-modo-cards {
+        flex-direction: row;
+        width: 70%;
+    }
 }

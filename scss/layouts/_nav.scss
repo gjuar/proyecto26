@@ -6,6 +6,12 @@
     filter: brightness(0) saturate(100%) invert(19%) sepia(47%) saturate(850%) hue-rotate(-128.7deg) brightness(63%) contrast(72%);
 }
 
+@include desktop {
+    .nav-title {
+        width: 20%;
+    }
+}
+
 // boton hamburguesa - mobile y tablet
 .navbar-toggler {
     border: none;
@@ -103,6 +109,73 @@
 
         .dropdown-item {
             font-size: 1.3rem;
+        }
+    }
+}
+
+@include desktop {
+    .nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar-nav {
+        gap: 1rem;
+    }
+
+    .navbar {
+        .nav-link {
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $secondary-color;
+            }
+
+            &:focus-visible {
+                outline: 2px solid $secondary-color;
+                outline-offset: 4px;
+                border-radius: 3px;
+            }
+
+            &:active {
+                color: $accent-color;
+            }
+        }
+
+        .nav-link.show {
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-item {
+            font-size: 1.1rem;
+            color: $background-color;
+            background-color: transparent;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                color: $primary-color;
+                background-color: $secondary-color;
+            }
+
+            &:active {
+                color: $background-color;
+                background-color: $primary-color;
+            }
+
+            &:focus {
+                color: $primary-color;
+                background-color: $secondary-color;
+                outline: none;
+            }
         }
     }
 }

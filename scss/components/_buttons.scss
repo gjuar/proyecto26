@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .hero-button {
     background-color: $secondary-color;
@@ -19,6 +20,46 @@
     padding: 0.8rem 2rem 0.8rem 2rem;
     border-radius: 3rem;
     transition: background-color 0.3s ease,
-                color 0.3s ease,
-                transform 0.3s ease;
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+@include desktop {
+    .nav-button {
+        display: inline-block;
+        white-space: nowrap;
+        background-color: $secondary-color;
+        color: $background-color;
+        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 3rem;
+        transition: background-color 0.3s ease,
+            color 0.3s ease,
+            transform 0.3s ease;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $background-color;
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+
+        &:focus-visible {
+            outline: 2px solid $primary-color;
+            outline-offset: 4px;
+        }
+    }
+
+    .button-planifica {
+        font-size: 1.8rem;
+        font-weight: 600;
+
+        &:hover {
+            background-color: #be5c43;
+            color: #F3E2CF;
+            transform: translateY(-2px);
+        }
+    }
 }
