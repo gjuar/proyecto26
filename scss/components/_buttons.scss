@@ -1,8 +1,8 @@
-@use "../utilities/variables" as v;
+@use "../utilities/variables" as *;
 
 .hero-button {
-    background-color: v.$secondary-color;
-    color: v.$header-color;
+    background-color: $secondary-color;
+    color: $header-color;
     padding: 0.6rem 1.3rem;
     border-radius: 2rem;
     font-size: 1.2rem;
@@ -10,4 +10,15 @@
     text-decoration: none;
     transition: 0.3s;
     width: fit-content;
+}
+
+.button-planifica {
+    background-color: $secondary-color;
+    font-size: 1.2rem;
+    color: $background-color;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    border-radius: 3rem;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
 }

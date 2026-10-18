@@ -1,5 +1,5 @@
-@use "../utilities/variables" as v;
-@use "../utilities/extends";
+@use "../utilities/variables" as *;
+@use "../utilities/extends" as *;
 
 // cards - destinos destacados
 .destacados-cards {
@@ -52,7 +52,7 @@
         align-items: center;
         font-size: 2rem;
         font-weight: 900;
-        color: v.$primary-color;
+        color: $primary-color;
         width: 40px;
         height: 40px;
         background-color: #FFFFFF;
@@ -84,7 +84,7 @@
 }
 
 .card-destinos {
-    background-color: v.$header-color;
+    background-color: $header-color;
     box-shadow: 2px 2px 10px rgba(48, 45, 51, 0.18);
     border-radius: 1.5rem;
     margin: 0 1rem 0 1rem;
@@ -129,7 +129,7 @@
 }
 
 .card-destinos-eyebrow {
-    color: v.$eyebrow-color;
+    color: $eyebrow-color;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.08rem;
@@ -137,11 +137,43 @@
 }
 
 .card-destinos-link {
-    color: v.$primary-color;
+    color: $primary-color;
     font-size: 1.25rem;
     font-weight: 700;
-    border-bottom: 2px solid v.$secondary-color;
+    border-bottom: 2px solid $secondary-color;
     padding-bottom: 0.3rem;
     width: fit-content;
     margin: 1.3rem;
+}
+
+.card-consejo {
+    margin: 0 3rem 0 3rem;
+    padding: 1rem;
+    border-left: 4px solid $accent-color;
+}
+
+.nuestro-modo-cards {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}
+
+.nuestro-modo-card {
+    background-color: $header-color;
+    box-shadow: 2px 2px 10px rgba(48, 45, 51, 0.18);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    border-bottom: 4px solid $secondary-color;
+}
+
+.nuestro-modo-card-eyebrow {
+    font-family: $font-primary;
+    color: $secondary-color;
+    font-size: 1.3rem;
+}
+
+.nuestro-modo-card-text {
+    font-size: 1.5rem;
+    line-height: 1;
 }

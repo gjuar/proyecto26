@@ -1,5 +1,5 @@
-@use "../utilities/variables" as v;
-@use "../utilities/extends";
+@use "../utilities/variables" as *;
+@use "../utilities/extends" as *;
 
 // Titulos
 h1 {
@@ -25,5 +25,5 @@ ul {
 }
 
 a {
-    color: v.$secondary-color;
+    color: $secondary-color;
 }

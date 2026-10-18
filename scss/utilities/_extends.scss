@@ -1,9 +1,9 @@
-@use "../utilities/variables" as v;
+@use "../utilities/variables" as *;
 
 %heading-style {
-    font-family: v.$font-primary;
+    font-family: $font-primary;
     font-weight: 400;
-    color: v.$primary-color;
+    color: $primary-color;
 }
 
 %card-city {

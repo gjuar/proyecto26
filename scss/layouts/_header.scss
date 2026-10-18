@@ -1,10 +1,10 @@
-@use "../utilities/variables" as v;
+@use "../utilities/variables" as *;
 
 header {
     grid-area: header;
-    font-family: v.$font-primary;
-    background-color: v.$background-color;
-    color: v.$header-color;
+    font-family: $font-primary;
+    background-color: $background-color;
+    color: $header-color;
     padding: 0 1rem 0 1rem;
 }
 
