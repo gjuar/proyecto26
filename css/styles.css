@@ -66,7 +66,7 @@ ul {
 }
 
 a {
-  color: #E76F51;
+  color: #8B260D;
 }
 
 header {
@@ -105,7 +105,7 @@ header:has(.navbar-collapse.show) + main .hero {
 }
 .navbar-toggler:focus {
   box-shadow: none;
-  outline: 2px solid #E76F51;
+  outline: 2px solid #8B260D;
   outline-offset: 3px;
 }
 .navbar-toggler:active {
@@ -140,7 +140,7 @@ header:has(.navbar-collapse.show) + main .hero {
   text-align: center;
 }
 .navbar .nav-link.active {
-  color: #E76F51;
+  color: #8B260D;
 }
 .navbar .dropdown-menu {
   background-color: #493657;
@@ -194,10 +194,10 @@ header:has(.navbar-collapse.show) + main .hero {
     transition: color 0.3s ease;
   }
   .navbar .nav-link:hover {
-    color: #E76F51;
+    color: #8B260D;
   }
   .navbar .nav-link:focus-visible {
-    outline: 2px solid #E76F51;
+    outline: 2px solid #8B260D;
     outline-offset: 4px;
     border-radius: 3px;
   }
@@ -216,7 +216,7 @@ header:has(.navbar-collapse.show) + main .hero {
   }
   .navbar .dropdown-item:hover {
     color: #493657;
-    background-color: #E76F51;
+    background-color: #8B260D;
   }
   .navbar .dropdown-item:active {
     color: #F3E2CF;
@@ -224,7 +224,7 @@ header:has(.navbar-collapse.show) + main .hero {
   }
   .navbar .dropdown-item:focus {
     color: #493657;
-    background-color: #E76F51;
+    background-color: #8B260D;
     outline: none;
   }
 }
@@ -369,12 +369,12 @@ main section {
 }
 .destacados h2 span {
   display: block;
-  color: #E76F51;
+  color: #8B260D;
   font-style: italic;
 }
 
 .destacados-eyebrow {
-  color: #BD5B42;
+  color: #9E4C38;
   font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 3px;
@@ -553,12 +553,12 @@ main section {
   padding: 1.2rem;
 }
 .nuestra-historia h2 span {
-  color: #E76F51;
+  color: #8B260D;
   font-style: italic;
 }
 
 .nuestra-historia-t-eyebrow {
-  color: #BD5B42;
+  color: #9E4C38;
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
@@ -605,12 +605,12 @@ main section {
   text-align: center;
 }
 .nuestro-modo span {
-  color: #E76F51;
+  color: #8B260D;
   font-style: italic;
 }
 
 .nuestro-modo-eyebrow {
-  color: #BD5B42;
+  color: #9E4C38;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 3px;
@@ -629,7 +629,7 @@ main section {
   padding: 1.5rem;
 }
 .tu-idea span {
-  color: #E76F51;
+  color: #8B260D;
   font-style: italic;
 }
 .tu-idea p {
@@ -764,7 +764,7 @@ footer p {
     transition: filter 0s ease, transform 0.3s;
   }
   .footer-redes .img-icons:focus-visible {
-    outline: 2px solid #E76F51;
+    outline: 2px solid #8B260D;
     outline-offset: 4px;
     border-radius: 3px;
   }
@@ -789,13 +789,13 @@ footer p {
     box-shadow: none;
   }
   .newsletter-form .form-control::placeholder {
-    color: #8C8585;
+    color: #655F5F;
   }
   .newsletter-form .form-control:focus {
-    box-shadow: inset 0 0 0 1px #E76F51;
+    box-shadow: inset 0 0 0 1px #8B260D;
   }
   .newsletter-form .newsletter-btn {
-    background-color: #E76F51;
+    background-color: #8B260D;
     color: #FFF8F0;
     border: none;
     font-size: 0.8rem;
@@ -814,7 +814,7 @@ footer p {
     outline-offset: -4px;
   }
   .newsletter-form .newsletter-btn:active {
-    background-color: #BD5B42;
+    background-color: #9E4C38;
   }
 }
 @media (min-width: 1024px) and (min-width: 767px) {
@@ -848,7 +848,7 @@ footer p {
   }
 }
 .hero-button {
-  background-color: #E76F51;
+  background-color: #8B260D;
   color: #FFF8F0;
   font-size: 1.2rem;
   padding: 0.6rem 1.3rem;
@@ -860,7 +860,7 @@ footer p {
 }
 
 .button-planifica {
-  background-color: #E76F51;
+  background-color: #8B260D;
   color: #F3E2CF;
   font-size: 1.2rem;
   padding: 0.8rem 2rem 0.8rem 2rem;
@@ -870,7 +870,7 @@ footer p {
 
 @media (min-width: 1024px) {
   .nav-button {
-    background-color: #E76F51;
+    background-color: #8B260D;
     color: #F3E2CF;
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 3rem;
@@ -925,7 +925,7 @@ footer p {
     flex-basis: 32%;
   }
   .card-back a:hover {
-    color: #E76F51;
+    color: #8B260D;
     box-shadow: 1px 1px 12px #000000;
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   }
@@ -933,7 +933,7 @@ footer p {
     color: #F3E2CF;
   }
   .card-back a:focus-visible {
-    outline: 2px solid #E76F51;
+    outline: 2px solid #8B260D;
     outline-offset: 4px;
   }
 }
@@ -1033,7 +1033,7 @@ footer p {
 }
 
 .card-destinos-eyebrow {
-  color: #BD5B42;
+  color: #9E4C38;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.08rem;
@@ -1044,7 +1044,7 @@ footer p {
   color: #493657;
   font-size: 1.25rem;
   font-weight: 700;
-  border-bottom: 2px solid #E76F51;
+  border-bottom: 2px solid #8B260D;
   padding-bottom: 0.3rem;
   width: fit-content;
   margin: 1.3rem;
@@ -1079,12 +1079,12 @@ footer p {
   box-shadow: 2px 2px 10px rgba(48, 45, 51, 0.18);
   border-radius: 1.5rem;
   padding: 1.5rem;
-  border-bottom: 4px solid #E76F51;
+  border-bottom: 4px solid #8B260D;
 }
 
 .nuestro-modo-card-eyebrow {
   font-family: "Zen Dots", sans-serif;
-  color: #E76F51;
+  color: #8B260D;
   font-size: 1.3rem;
 }
 
@@ -1126,7 +1126,7 @@ footer p {
 .contact-form .form-control:focus,
 .contact-form .form-select:focus,
 .contact-form .form-check-input:focus {
-  border-color: #E76F51;
+  border-color: #8B260D;
   box-shadow: 0 0 0 0.2rem rgba(231, 111, 81, 0.2);
 }
 .contact-form .form-check-input:checked {
