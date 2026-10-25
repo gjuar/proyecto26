@@ -35,7 +35,7 @@
         a {
             &:hover {
                 color: $secondary-color;
-                box-shadow: 1px 1px 12px #000000;
+                box-shadow: 1px 1px 12px $black-color;
                 transition: background-color 0.3s ease,
                     color 0.3s ease,
                     box-shadow 0.3s ease;
@@ -87,10 +87,10 @@
         color: $primary-color;
         width: 40px;
         height: 40px;
-        background-color: #FFFFFF;
+        background-color: $white-color;
         border-radius: 50%;
         padding-top: 0.2rem;
-        box-shadow: 1px 1px 10px #000000;
+        box-shadow: 1px 1px 10px $black-color;
     }
 
     img {
@@ -187,7 +187,7 @@
 
     .card-destinos-link {
         &:hover {
-            border-bottom: 2px solid #F4A261;
+            border-bottom: 2px solid $card-linedesti;
         }
     }
 }

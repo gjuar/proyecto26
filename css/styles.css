@@ -895,7 +895,7 @@ footer p {
     font-weight: 600;
   }
   .button-planifica:hover {
-    background-color: #be5c43;
+    background-color: #BE5C43;
     color: #F3E2CF;
     transform: translateY(-2px);
   }
@@ -1120,7 +1120,7 @@ footer p {
   border: 1px solid #CFC2D5;
   font-family: "Dongle", sans-serif;
   font-size: 1.2rem;
-  background-color: #FFF;
+  background-color: #FFFFFF;
 }
 .contact-form .form-control:focus,
 .contact-form .form-select:focus,

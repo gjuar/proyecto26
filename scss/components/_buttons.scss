@@ -57,8 +57,8 @@
         font-weight: 600;
 
         &:hover {
-            background-color: #be5c43;
-            color: #F3E2CF;
+            background-color: $btnplanihover-color;
+            color: $btnfont-color;
             transform: translateY(-2px);
         }
     }
