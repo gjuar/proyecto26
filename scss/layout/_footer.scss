@@ -12,10 +12,7 @@ footer {
 }
 
 .footer-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, column, center, center, null);
 }
 
 .footer-logo {
@@ -30,18 +27,14 @@ footer {
 }
 
 .footer-redes {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    @include flex(flex, column, end, null, null);
     margin: 0.5rem;
 
     ul {
-        display: flex;
-        justify-content: center;
+        @include flex(flex, null, center, null, 1rem);
         list-style: none;
         margin: 0;
         padding: 0;
-        gap: 1rem;
     }
 }
 
@@ -64,9 +57,7 @@ footer {
 
 @include desktop {
     footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include flex(flex, column, space-between, null, null);
     }
 
     .footer-bar {

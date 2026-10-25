@@ -115,9 +115,7 @@
 
 @include desktop {
     .nav-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex(flex, null, space-between, center, null);
     }
 
     .navbar-collapse {

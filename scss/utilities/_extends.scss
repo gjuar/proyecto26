@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 %heading-style {
     font-family: $font-primary;
@@ -7,9 +8,7 @@
 }
 
 %card-city {
-    display: flex;
-    align-items: end;
-    justify-content: center;
+    @include flex(flex, null, center, end, null);
     height: 30dvh;
     background-size: cover;
     border-radius: 1rem;

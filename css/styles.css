@@ -6,8 +6,8 @@ h1, h2, h3 {
 
 .card-roma, .card-paris, .card-amsterdam {
   display: flex;
-  align-items: end;
   justify-content: center;
+  align-items: end;
   height: 30dvh;
   background-size: cover;
   border-radius: 1rem;
@@ -178,8 +178,8 @@ header:has(.navbar-collapse.show) + main .hero {
 @media (min-width: 1024px) {
   .nav-header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
   }
   .navbar-collapse {
     flex-grow: 0;
@@ -600,9 +600,9 @@ main section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
   margin: 1rem;
   text-align: center;
-  gap: 0.5rem;
 }
 .nuestro-modo span {
   color: #E76F51;
@@ -625,8 +625,8 @@ main section {
 .tu-idea {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
   gap: 0.5rem;
+  padding: 1.5rem;
 }
 .tu-idea span {
   color: #E76F51;
@@ -719,10 +719,10 @@ footer p {
 .footer-redes ul {
   display: flex;
   justify-content: center;
+  gap: 1rem;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1rem;
 }
 
 .img-icons {
@@ -850,9 +850,9 @@ footer p {
 .hero-button {
   background-color: #E76F51;
   color: #FFF8F0;
+  font-size: 1.2rem;
   padding: 0.6rem 1.3rem;
   border-radius: 2rem;
-  font-size: 1.2rem;
   font-weight: 700;
   text-decoration: none;
   transition: 0.3s;
@@ -861,8 +861,8 @@ footer p {
 
 .button-planifica {
   background-color: #E76F51;
-  font-size: 1.2rem;
   color: #F3E2CF;
+  font-size: 1.2rem;
   padding: 0.8rem 2rem 0.8rem 2rem;
   border-radius: 3rem;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
@@ -870,12 +870,12 @@ footer p {
 
 @media (min-width: 1024px) {
   .nav-button {
-    display: inline-block;
-    white-space: nowrap;
     background-color: #E76F51;
     color: #F3E2CF;
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 3rem;
+    display: inline-block;
+    white-space: nowrap;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   }
   .nav-button:hover {
@@ -1069,8 +1069,9 @@ footer p {
 .nuestro-modo-cards {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  align-items: nul;
   gap: 1rem;
+  text-align: left;
 }
 
 .nuestro-modo-card {
@@ -1143,9 +1144,9 @@ footer p {
   gap: 0.5rem;
   background-color: #493657;
   color: #FFF8F0;
-  margin: 1rem;
-  border-radius: 1rem;
   padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  border-radius: 1rem;
+  margin: 1rem;
 }
 
 .cta-destinos-text-eyebrow {

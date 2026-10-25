@@ -9,3 +9,19 @@
         @content;
     }
 }
+
+@mixin flex($display, $direction, $justify, $align, $gap) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin main-button($background-color, $color, $font-size, $padding, $border-radius) {
+    background-color: $background-color;
+    color: $color;
+    font-size: $font-size;
+    padding: $padding;
+    border-radius: $border-radius;
+}

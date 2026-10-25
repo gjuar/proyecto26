@@ -2,11 +2,7 @@
 @use "../utilities/mixins" as *;
 
 .hero-button {
-    background-color: $secondary-color;
-    color: $header-color;
-    padding: 0.6rem 1.3rem;
-    border-radius: 2rem;
-    font-size: 1.2rem;
+    @include main-button($secondary-color, $header-color, 1.2rem, 0.6rem 1.3rem, 2rem);
     font-weight: 700;
     text-decoration: none;
     transition: 0.3s;
@@ -14,11 +10,7 @@
 }
 
 .button-planifica {
-    background-color: $secondary-color;
-    font-size: 1.2rem;
-    color: $background-color;
-    padding: 0.8rem 2rem 0.8rem 2rem;
-    border-radius: 3rem;
+    @include main-button($secondary-color, $background-color, 1.2rem, 0.8rem 2rem 0.8rem 2rem, 3rem);
     transition: background-color 0.3s ease,
         color 0.3s ease,
         transform 0.3s ease;
@@ -26,12 +18,9 @@
 
 @include desktop {
     .nav-button {
+        @include main-button($secondary-color, $background-color, null, 1rem 2rem 1rem 2rem, 3rem);
         display: inline-block;
         white-space: nowrap;
-        background-color: $secondary-color;
-        color: $background-color;
-        padding: 1rem 2rem 1rem 2rem;
-        border-radius: 3rem;
         transition: background-color 0.3s ease,
             color 0.3s ease,
             transform 0.3s ease;

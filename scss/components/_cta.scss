@@ -2,14 +2,9 @@
 @use "../utilities/mixins" as *;
 
 .cta-destinos {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    background-color: $primary-color;
-    color: $header-color;
+    @include flex(flex, column, null, null, 0.5rem);
+    @include main-button($primary-color, $header-color, null, 1.5rem 1.5rem 2.5rem 1.5rem, 1rem);
     margin: 1rem;
-    border-radius: 1rem;
-    padding: 1.5rem 1.5rem 2.5rem 1.5rem;
 }
 
 .cta-destinos-text-eyebrow {
@@ -43,9 +38,7 @@
     }
 
     .cta-destinos-button {
-        display: flex;
-        justify-content: end;
-        align-items: center;
+        @include flex(flex, null, end, center, null);
         padding-right: 2rem;
     }
 
