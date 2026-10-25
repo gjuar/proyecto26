@@ -706,7 +706,7 @@ footer p {
 }
 .footer-logo img {
   width: 60%;
-  height: fit-content;
+  height: auto;
   filter: brightness(0) saturate(100%) invert(89%) sepia(13%) saturate(340%) hue-rotate(326deg) brightness(102%) contrast(91%);
 }
 
