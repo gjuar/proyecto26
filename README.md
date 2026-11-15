@@ -34,9 +34,11 @@ proyecto26/
 │   ├── components/
 │   ├── layout/
 │   └── utilities/
-├── css/
+├── styles/
 │   └── styles.css
-└── img/
+├── assets/
+│   └── img/
+
 ```
 
 ## 🚀 Cómo ejecutar el proyecto
