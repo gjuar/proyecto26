@@ -243,7 +243,7 @@ main section {
 .hero {
   height: 50dvh;
   min-height: unset;
-  background-image: url("../img/hero.webp");
+  background-image: url("../assets/img/hero.webp");
   background-size: cover;
   background-position: 65% center;
   position: relative;
@@ -571,7 +571,7 @@ main section {
 }
 
 .nuestra-historia-img {
-  background-image: url(../img/hero.webp);
+  background-image: url(../assets/img/hero.webp);
   min-height: 260px;
   background-size: cover;
   background-position: center;
@@ -938,15 +938,15 @@ footer p {
   }
 }
 .card-roma {
-  background-image: url(../img/card-roma.webp);
+  background-image: url(../assets/img/card-roma.webp);
 }
 
 .card-paris {
-  background-image: url(../img/card-paris.webp);
+  background-image: url(../assets/img/card-paris.webp);
 }
 
 .card-amsterdam {
-  background-image: url(../img/card-amsterdam.webp);
+  background-image: url(../assets/img/card-amsterdam.webp);
 }
 
 .card-back {
@@ -1001,15 +1001,15 @@ footer p {
 }
 
 .card-destinos-roma {
-  background-image: url(../img/card-roma.webp);
+  background-image: url(../assets/img/card-roma.webp);
 }
 
 .card-destinos-paris {
-  background-image: url(../img/card-paris.webp);
+  background-image: url(../assets/img/card-paris.webp);
 }
 
 .card-destinos-amsterdam {
-  background-image: url(../img/card-amsterdam.webp);
+  background-image: url(../assets/img/card-amsterdam.webp);
 }
 
 .card-destinos-text {

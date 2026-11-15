@@ -17,7 +17,7 @@ main {
 .hero {
     height: 50dvh;
     min-height: unset;
-    background-image: url("../img/hero.webp");
+    background-image: url("../assets/img/hero.webp");
     background-size: cover;
     background-position: 65% center;
     position: relative;
@@ -400,7 +400,7 @@ main {
 }
 
 .nuestra-historia-img {
-    background-image: url(../img/hero.webp);
+    background-image: url(../assets/img/hero.webp);
     min-height: 260px;
     background-size: cover;
     background-position: center;

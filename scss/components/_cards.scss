@@ -55,17 +55,17 @@
 
 .card-roma {
     @extend %card-city;
-    background-image: url(../img/card-roma.webp);
+    background-image: url(../assets/img/card-roma.webp);
 }
 
 .card-paris {
     @extend %card-city;
-    background-image: url(../img/card-paris.webp);
+    background-image: url(../assets/img/card-paris.webp);
 }
 
 .card-amsterdam {
     @extend %card-city;
-    background-image: url(../img/card-amsterdam.webp);
+    background-image: url(../assets/img/card-amsterdam.webp);
 }
 
 .card-back {
@@ -120,17 +120,17 @@
 }
 
 .card-destinos-roma {
-    background-image: url(../img/card-roma.webp);
+    background-image: url(../assets/img/card-roma.webp);
     @extend %card-destinos-city;
 }
 
 .card-destinos-paris {
-    background-image: url(../img/card-paris.webp);
+    background-image: url(../assets/img/card-paris.webp);
     @extend %card-destinos-city;
 }
 
 .card-destinos-amsterdam {
-    background-image: url(../img/card-amsterdam.webp);
+    background-image: url(../assets/img/card-amsterdam.webp);
     @extend %card-destinos-city;
 }
 
