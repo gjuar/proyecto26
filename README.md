@@ -36,8 +36,8 @@ proyecto26/
 │   └── utilities/
 ├── styles/
 │   └── styles.css
-├── assets/
-│   └── img/
+└── assets/
+    └── img/
 
 ```
 
