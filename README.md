@@ -76,7 +76,9 @@ Desarrollado por **gjuar**.
 - GitHub: [@gjuar](https://github.com/gjuar)
 
 
-## 🌐 Vista web
+## 🌐 Vista web: Vercel / GitHub Pages
+
+- https://desarrollo-web-26.vercel.app/
 
 - https://gjuar.github.io/proyecto26/
 
