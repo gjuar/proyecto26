@@ -730,6 +730,12 @@ footer p {
   height: auto;
 }
 
+.newsletter-btn {
+  background-color: #8B260D;
+  color: #FFF8F0;
+  border: none;
+}
+
 @media (min-width: 767px) {
   .footer-logo img {
     width: 40%;

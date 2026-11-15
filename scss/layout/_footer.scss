@@ -43,6 +43,12 @@ footer {
     height: auto;
 }
 
+.newsletter-btn {
+            background-color: $secondary-color;
+            color: $header-color;
+            border: none;
+}
+
 @include tablet {
     .footer-logo {
         img {
