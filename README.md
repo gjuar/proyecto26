@@ -86,4 +86,4 @@ Desarrollado por **gjuar**.
 
 ## Preview
 
-![Vista previa de Tripdate](./assets//img/preview-tripdate.png)
+![Vista previa de Tripdate](./assets/img/preview-tripdate.png)
